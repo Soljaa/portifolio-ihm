@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Projeto de Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #4A90E2;
+      --color-secondary: #50E3C2;
+      --color-accent: #F5A623;
+      --bg-light: #f9f9f9;
+      --bg-white: #ffffff;
+      --text-dark: #333;
+      --text-light: #666;
+      --font-base: 'Noto Sans', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-base);
+      line-height: 1.6;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    section h2 {
+      color: var(--color-primary);
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50px;
+      height: 4px;
+      background-color: var(--color-accent);
+      border-radius: 2px;
+    }
+
+    section h2 i {
+      color: var(--color-accent);
+    }
+
+    section p, section ul, section li {
+      color: var(--text-light);
+      font-size: 1.1rem;
+    }
+
+    .section-bg {
+      background-color: var(--bg-white);
+      border-radius: 16px;
+      padding: 3rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    .image-container {
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .chart {
+      margin-top: 2rem;
+      text-align: center;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav div:last-child {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        section {
+            padding: 2rem 1rem;
+        }
+
+        .section-bg {
+            padding: 1.5rem;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        section p, section ul, section li {
+            font-size: 1rem;
+        }
+
+        iframe {
+            height: 250px;
+        }
+
+        .chart > iframe {
+            width: fit-content !important;
+            height: auto !important;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header {
+            padding: 0.8rem 1rem;
+        }
+
+        section h2 {
+            font-size: 1.4rem;
+        }
+
+        nav a {
+            font-size: 0.9rem;
+        }
+
+        .section-bg {
+            padding: 1rem;
+        }
+    }
+
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 2000;
+			padding-top: 60px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0,0,0,0.8);
+		}
+
+		.modal-content {
+			margin: auto;
+			display: block;
+			max-width: 90%;
+			max-height: 80%;
+			border-radius: 10px;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+			animation: zoom 0.3s ease;
+		}
+
+		@keyframes zoom {
+			from {transform: scale(0.7);}
+			to {transform: scale(1);}
+		}
+
+		.close {
+			position: absolute;
+			top: 30px;
+			right: 45px;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: color 0.3s;
+		}
+
+		.close:hover {
+			color: #ccc;
+		}
+
+		.respostas-scroll {
+			max-height: 300px;
+			overflow-y: auto;
+			background: #fff;
+			padding: 1rem;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+		}
+
+		.respostas-scroll ul {
+			list-style: disc inside;
+			padding-left: 1rem;
+		}
+
+		.respostas-scroll li {
+			margin-bottom: 0.75rem;
+			font-size: 1rem;
+			color: var(--text-light);
+		}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>Projeto Design</strong></div>
+      <div>
+        <a href="#desafio">Desafio</a>
+        <a href="#desk-research">Desk Research</a>
+        <a href="#analise">Análise</a>
+        <a href="#questionario">Questionário</a>
+        <a href="#qualitativa">Qualitativa</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="desafio">
+      <div class="section-bg">
+        <h2><i class="fas fa-question-circle"></i> Definição da Design Challenge: HMW</h2>
+        <p><strong>Pergunta:</strong><br>
+          Como nós podemos ajudar alunos da graduação do IC a acompanhar o seu progresso de horas complementares de forma eficiente e organizada?</p>
+        <ul>
+          <li><strong>A pergunta é focada no impacto principal?</strong><br>
+            Sim. Ela está centrada em resolver um problema real e específico: a dificuldade dos alunos em acompanhar o progresso de horas complementares, com foco em eficiência e organização.</li>
+          <li><strong>A pergunta permite uma variedade de soluções?</strong><br>
+            Sim. É aberta o suficiente para permitir diversas abordagens como apps, planilhas, integrações com sistemas institucionais, gamificação, entre outras.</li>
+          <li><strong>A pergunta leva em conta contexto e limitações?</strong><br>
+            Parcialmente. Menciona o público (alunos do IC), mas não explicita limitações como variabilidade das regras, desconhecimento das normas, ou restrições tecnológicas. Pode ser refinada para refletir melhor esse contexto.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="desk-research">
+      <div class="section-bg">
+        <h2><i class="fas fa-search"></i> Desk Research (Matriz CSD)</h2>
+        <img alt="matriz csd" src="./images/csd.jpg">
+        </div>
+    </section>
+
+    <section id="analise">
+      <div class="section-bg">
+        <h2><i class="fas fa-chart-line"></i> Análise Competitiva / Comparativa / Inspiradora</h2>
+        <img alt="matriz csd" src="./images/comparativa.jpg">
+      </div>
+    </section>
+
+    <section id="questionario">
+      <div class="section-bg">
+        <h2><i class="fas fa-poll"></i> Questionário com Usuários</h2>
+        <p>Resultados principais com visualização gráfica:</p>
+        <div class="chart">
+            <iframe width="362" height="225" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=54903063&amp;format=interactive"></iframe>
+            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=1214341529&amp;format=interactive"></iframe>
+            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=985867723&amp;format=interactive"></iframe>
+            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=109229856&amp;format=interactive"></iframe>
+            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=374904570&amp;format=interactive"></iframe>
+            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=1285379171&amp;format=interactive"></iframe>
+						<iframe width="642" height="453" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=810323748&amp;format=interactive"></iframe>
+						<iframe width="600" height="376" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=727819233&amp;format=interactive"></iframe>
+						<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=1099391427&amp;format=interactive"></iframe>
+						<iframe width="869" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=1082918789&amp;format=interactive"></iframe>
+						<iframe width="577" height="356" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=1310745634&amp;format=interactive"></iframe>
+						<iframe width="609" height="376" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=1028560626&amp;format=interactive"></iframe>
+						<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=657019225&amp;format=interactive"></iframe>
+						<section class="section-bg">
+						<p><strong>Qual sua principal dificuldade considerando todo o processo de organização e envio dos certificados?</strong></p>
+						<div class="respostas-scroll">
+							<ul>
+								<li>Não sei para onde tenho que envia-los e quantas horas cada certificado pode me dar.</li>
+								<li>Não é muito intuitivo, muito menos incentivado durante os primeiros períodos de curso. Depois se torna uma correria</li>
+								<li>A impossibilidade de enviar os certificados e contabilizar as horas de atividades complementares antes do último período...</li>
+								<li>As vezes tem certificados que não ficam disponíveis</li>
+								<li>Tudo é um tanto abstrato.</li>
+								<li>Como que devem ser separados e enviados os comprovantes.</li>
+								<li>Acho difícil encontrar as regras em relação às horas</li>
+								<li>A emissão de alguns certificados demorarem demais...</li>
+								<li>Ter que salvar tudo antes para enviar de uma só vez ao final do curso...</li>
+								<li>Ter que enviar os certificados apenas ao final do curso...</li>
+								<li>Falta de comunicação e integração no site da UFF.</li>
+								<li>Só fiquei ciente das regras beeem depois de ingressar</li>
+								<li>Salvar</li>
+								<li>Poderiam ser feitos por período...</li>
+								<li>Acho que seria mais fácil poder ir enviando desde o começo...</li>
+								<li>Guardar os certificados</li>
+								<li>Falta de orientação.</li>
+								<li>Conseguir os certificados</li>
+								<li>Não encontro informações sobre quando devo enviar os certificados...</li>
+								<li>1. conseguir os certificados e 2. saber para o que/quanto eles contam</li>
+								<li>Obter informações sobre as horas complementares e inscrição</li>
+								<li>Nenhuma</li>
+								<li>Acho que deveria ter uma página do id uff só para isso</li>
+								<li>O fato de que tem que guardar tudo para só no final saber quantas horas vou ganhar de fato</li>
+								<li>Justamente saber quais tem e quais não tem disponíveis ou próximos de ocorrer.</li>
+								<li>Encontrar todas as informações necessárias em um único veículo de informação...</li>
+								<li>Estou me formando agora, e a parte mais difícil foi ir atrás do certificado...</li>
+								<li>Falta de uma ferramenta institucional que seja prática e funcional.</li>
+								<li>Não sei exatamente como funciona</li>
+								<li>Saber o quanto cada atividade vale em horas complementares</li>
+								<li>Não faço ideia de como funciona</li>
+								<li>Que eu não posso enviar "parcelado"... </li>
+								<li>Saber quais horas contam, o limite de cada categoria e como conseguir as que não são complementares</li>
+								<li>Forma de contabilizar e armazenar os certificados</li>
+								<li>Acho que manter um acompanhamento de tudo...</li>
+								<li>Calcular quantas horas tenho/faltam. Devia estar na plataforma da UFF</li>
+								<li>A não-existência de uma plataforma de atualização automática...</li>
+								<li>Acho que poderia ter uma forma de contabilizar as horas ao longo do curso...</li>
+								<li>Ainda não tive.</li>
+								<li>Sempre achei confuso o "quando posso pedir" os certificados e a quem perguntar para consegui-los.</li>
+								<li>O fato de não poder enviar ao longo do curso...</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+      </div>
+    </section>
+
+    <section id="qualitativa">
+      <div class="section-bg">
+        <h2><i class="fas fa-comments"></i> Técnica Qualitativa</h2>
+        <p>Explique a técnica utilizada (ex: entrevista em profundidade, card sorting, etc.) e os principais achados qualitativos.</p>
+      </div>
+    </section>
+  </main>
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+	<script>
+		// Seleciona todas as imagens das seções
+		const images = document.querySelectorAll('section img');
+		const modal = document.getElementById("imageModal");
+		const modalImg = document.getElementById("modalImage");
+		const closeBtn = document.querySelector(".close");
+
+		images.forEach(img => {
+			img.style.cursor = "zoom-in";
+			img.addEventListener("click", () => {
+				modal.style.display = "block";
+				modalImg.src = img.src;
+				modalImg.alt = img.alt;
+			});
+		});
+
+		closeBtn.onclick = () => {
+			modal.style.display = "none";
+		};
+
+		window.onclick = (e) => {
+			if (e.target === modal) {
+				modal.style.display = "none";
+			}
+		};
+	</script>
+</body>
+</html>
