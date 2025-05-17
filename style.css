@@ -36,6 +36,11 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+p {
+  text-indent: 2rem;
+  margin-bottom: 5px;
+}
+
 img {
   max-width: 100%;
 }
@@ -93,13 +98,13 @@ section h2::after {
 }
 
 section h3 {
-    color: var(--color-accent);
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    position: relative;
-  }
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+}
 
 section h2 i {
   color: var(--color-accent);
@@ -131,7 +136,7 @@ section li {
 }
 
 iframe {
-    margin-top: 2rem;
+  margin-top: 2rem;
   height: 400px;
   border: none;
   border-radius: 8px;
