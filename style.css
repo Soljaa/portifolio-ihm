@@ -287,3 +287,146 @@ iframe {
   font-size: 1rem;
   color: var(--text-light);
 }
+
+/* Carrossel */
+
+.carousel-container {
+  position: relative;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Importante para esconder slides não visíveis */
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Transição suave */
+}
+
+.carousel-slide {
+  min-width: 100%; /* Cada slide ocupa 100% da largura do contêiner */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Estilo para as setas */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1; /* Para centralizar ícones/texto */
+  border-radius: 50%; /* Faz o botão ser redondo */
+  z-index: 10; /* Garante que os botões fiquem acima dos slides */
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Largura e altura para um círculo */
+  height: 50px;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-arrow-left {
+  left: 10px;
+}
+
+.carousel-arrow-right {
+  right: 10px;
+}
+
+/* Estilo para os dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(65, 65, 65, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-dot.active {
+  background-color: #007bff; /* Cor do dot ativo */
+  transform: scale(1.2); /* Pequeno destaque visual */
+}
+
+/* Estilos para o contêiner de conteúdo dentro do slide */
+.carousel-slide-content {
+  display: flex; /* Ativa o Flexbox para alinhar itens lado a lado */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: center; /* Centraliza horizontalmente (opcional, dependendo do conteúdo) */
+  width: 100%; /* Garante que o contêiner ocupe a largura total do slide */
+  /* Você pode adicionar padding aqui se quiser espaço interno */
+  padding: 15px; /* Exemplo de padding */
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura */
+}
+
+/* Estilos para a coluna de texto */
+.carousel-text-column {
+  flex: 0 0 35%; /* Define a largura base para 35%, não permite encolher ou crescer */
+  text-align: center; /* Centraliza o texto */
+  padding-right: 15px; /* Espaçamento entre o texto e a imagem */
+}
+
+.carousel-text-column p {
+  margin-bottom: 0; /* Remove margem inferior padrão de parágrafos se não quiser */
+}
+
+/* Estilos para a coluna da imagem */
+.carousel-image-column {
+  flex: 0 0 65%; /* Define a largura base para 65%, não permite encolher ou crescer */
+}
+
+/* Garante que a imagem seja responsiva dentro de sua coluna */
+.carousel-image-column img {
+  max-width: 100%; /* A imagem não excederá a largura da sua coluna */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaço extra abaixo da imagem (se houver) */
+}
+
+/* Media Query para responsividade: empilha em telas pequenas */
+@media (max-width: 768px) {
+  /* Você pode ajustar este breakpoint (768px é comum para tablets/celulares) */
+  .carousel-slide-content {
+    flex-direction: column; /* Altera a direção para coluna em telas pequenas (empilha) */
+  }
+
+  .carousel-text-column,
+  .carousel-image-column {
+    flex: 0 0 100%; /* Cada um ocupa 100% da largura em telas pequenas */
+    padding: 0; /* Remove padding lateral ao empilhar */
+    text-align: center; /* Centraliza texto e imagem */
+  }
+
+  .carousel-text-column {
+    margin-bottom: 15px; /* Adiciona espaçamento entre o texto e a imagem quando empilhados */
+  }
+}
