@@ -1,0 +1,223 @@
+.persona {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  max-height: 900px;
+  overflow-y: scroll;
+}
+
+.persona p {
+  display: block; /* Elemento de bloco */
+  margin-top: 1em; /* Margem superior padrão */
+  margin-bottom: 1em; /* Margem inferior padrão */
+  margin-left: 0; /* Geralmente sem margem esquerda padrão */
+  margin-right: 0; /* Geralmente sem margem direita padrão */
+  padding: 0; /* Geralmente sem padding padrão */
+  line-height: normal; /* Altura da linha padrão (cerca de 1.2) */
+  text-align: start; /* Alinhamento do texto inicial (esquerda para LTR) */
+  text-indent: 0; /* Sem indentação de primeira linha padrão */
+}
+
+.persona-bio p {
+  text-indent: 2rem;
+}
+
+.persona ul {
+  margin-left: 10px;
+}
+
+.persona li {
+    text-align: start;
+}
+
+.persona h2::after {
+  all: inherit;
+}
+
+.portfolio-header {
+  background-color: #8e44ad;
+  padding: 20px;
+}
+
+.portfolio-title {
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  font-size: 32px;
+}
+
+.profile-main-content {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.left-column {
+  flex-grow: 1; /* Permite que a coluna cresça para preencher espaço */
+  flex-shrink: 0; /* Impede que a coluna encolha mais do que o necessário */
+  flex-basis: 25%;
+  max-width: 25%;
+  padding-left: 30px;
+}
+
+.right-column {
+  flex-grow: 1; /* Permite que a coluna cresça para preencher espaço */
+  flex-shrink: 0; /* Impede que a coluna encolha mais do que o necessário */
+  flex-basis: 33.333333%;
+  max-width: 33.333333%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.middle-column {
+  flex-grow: 1; /* Permite que a coluna cresça para preencher espaço */
+  flex-shrink: 0; /* Impede que a coluna encolha mais do que o necessário */
+  flex-basis: 41.666667%;
+  max-width: 41.666667%;
+  padding-left: 30px;
+}
+
+.persona-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+  border: 4px solid #8e44ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.persona-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.motivation-quote {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.persona-details-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #8e44ad;
+}
+
+.persona-details-card p {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+.persona-details-card strong {
+  color: #8e44ad;
+}
+
+.content-block {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0 0, 0.05);
+  margin: 20px 0;
+  width: 100%;
+}
+
+.tag-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tag-container li {
+  background-color: #8e44ad;
+  color: white;
+  display: inline-block;
+  padding: 8px 10px;
+}
+
+.section-title {
+  color: #8e44ad;
+  font-size: 1.4em;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .profile-main-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-column,
+  .right-column,
+  .middle-column {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .tag-container {
+    margin-top: 20px;
+  }
+
+}
+
+.skills-container {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-label {
+  flex-shrink: 0;
+  width: 150px;
+  font-size: 1em;
+  color: #333;
+  margin-right: 15px;
+}
+
+.skill-bar-outer {
+  flex-grow: 1;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.skill-bar-inner {
+  height: 100%;
+  background-color: #8e44ad;
+  border-radius: 6px;
+  transition: width 0.5s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    padding: 15px;
+  }
+  .skill-label {
+    width: 120px;
+    font-size: 0.9em;
+  }
+}
