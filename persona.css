@@ -146,6 +146,7 @@
   color: white;
   display: inline-block;
   padding: 8px 10px;
+  margin-top: 5px;
 }
 
 .section-title {
@@ -169,7 +170,7 @@
   }
 
   .tag-container {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
 }
