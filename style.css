@@ -84,9 +84,8 @@ img {
   top: 17.5%;
   left: 1.5%;
 
-  width: 16%;
   padding: 10px;
-
+  width: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -109,6 +108,8 @@ img {
 
   display: flex;
   flex-direction: column;
+
+  border-bottom: 0.5px #dddddd81 solid;
 }
 
 .sidebar-nav a:hover {
@@ -120,7 +121,6 @@ main {
   max-width: 1200px;
   margin: auto;
   padding: 2rem;
-  margin-top: -7.8%;
 }
 
 section {
@@ -204,6 +204,45 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 1507px) {
+  main {
+    margin-top: -8%;
+  }
+}
+
+@media screen and (max-width: 1506px) {
+  /*Side bar se torna um menu superior*/
+  .sticky-navigation-sidebar {
+    position: inherit;
+
+    width: auto;
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    align-self: center;
+    justify-self: center;
+
+    top: auto;
+    left: auto;
+  }
+}
+
+/*workaround ruim*/
+@media screen and (max-width: 1202px) {
+  /*Side bar se torna um menu superior*/
+  .sticky-navigation-sidebar {
+    position: inherit;
+
+    width: auto;
+    max-width: 1200px;
+    margin: 2rem;
+    align-self: center;
+    justify-self: center;
+
+    top: auto;
+    left: auto;
+  }
 }
 
 @media (max-width: 768px) {
