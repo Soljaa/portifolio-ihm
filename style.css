@@ -75,7 +75,6 @@ img {
 
 .header-nav .selected {
   text-decoration: underline;
-  
 }
 
 .sticky-navigation-sidebar {
@@ -99,7 +98,7 @@ img {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.192);
 }
 
-.sticky-navigation-sidebar strong{
+.sticky-navigation-sidebar strong {
   color: var(--text-light);
 }
 
@@ -116,9 +115,6 @@ img {
   opacity: 0.8;
   text-decoration: underline;
 }
-
-
-
 
 main {
   max-width: 1200px;
@@ -485,4 +481,12 @@ iframe {
   .carousel-text-column {
     margin-bottom: 15px; /* Adiciona espaçamento entre o texto e a imagem quando empilhados */
   }
+}
+
+.carousel-slides li {
+  text-align: left;
+}
+
+.carousel-slide ol {
+  margin: 0 75px;
 }
