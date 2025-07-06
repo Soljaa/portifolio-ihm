@@ -36,40 +36,8 @@ export default {
 }
 </script>
 
-<style scoped>
-:root {
-  --color-primary: #4a90e2;
-  --color-secondary: #50e3c2;
-  --color-accent: #f5a623;
-  --bg-light: #f9f9f9;
-  --bg-white: #ffffff;
-  --text-dark: #333;
-  --text-light: #666;
-  --font-base: "Noto Sans", sans-serif;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-base);
-  line-height: 1.6;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-
-  overflow-x: hidden;
-}
-main {
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem;
-}
+<style>
+  @import "./css/style.css";
+  @import "./css/persona.css"
 </style>
-
