@@ -52,27 +52,27 @@
         <CarouselContainer>
             <CarouselSlide>
                 <p><strong>Página Inicial</strong></p>
-                <img src="../../assets/images/pagina-inicial.png" alt="Página Inicial" />
+                <img src="@/assets/images/pagina-inicial.png" alt="Página Inicial" />
             </CarouselSlide>
             <CarouselSlide>
                 <p><strong>Página sobre Atividades complementares</strong></p>
-                <img src="../../assets/images/atividades.png" alt="Página Sobre ACs" />
+                <img src="@/assets/images/atividades.png" alt="Página Sobre ACs" />
             </CarouselSlide>
             <CarouselSlide>
                 <p><strong>Página de Eventos</strong></p>
-                <img src="../../assets/images/eventos-new.png" alt="Página de Eventos" />
+                <img src="@/assets/images/eventos-new.png" alt="Página de Eventos" />
             </CarouselSlide>
             <CarouselSlide>
                 <p><strong>Dashboard</strong></p>
-                <img src="../../assets/images/dashboard.png" alt="Dashboard" />
+                <img src="@/assets/images/dashboard.png" alt="Dashboard" />
             </CarouselSlide>
             <div class="carousel-slide">
                 <p><strong>Página de Registro de AC</strong></p>
-                <img src="../../assets/images/registro-new.png" alt="Página Registro AC" />
+                <img src="@/assets/images/registro-new.png" alt="Página Registro AC" />
               </div>
               <div class="carousel-slide">
                 <p><strong>Página do Formulário SRAC</strong></p>
-                <img src="../../assets/images/srac.png" alt="Página SRAC" />
+                <img src="@/assets/images/srac.png" alt="Página SRAC" />
               </div>
         </CarouselContainer>
 
@@ -99,7 +99,7 @@
                   </div>
                   <div class="carousel-image-column">
                     <img
-                      src="../../assets/images/inspiracao.png"
+                      src="@/assets/images/inspiracao.png"
                       alt="As interfaces avaliadas na análise competitiva"
                     />
                   </div>
@@ -107,7 +107,7 @@
             </CarouselSlide>
             <CarouselSlide>
                 <img
-                  src="../../assets/images/unifal.png"
+                  src="@/assets/images/unifal.png"
                   alt="Screenshot do simulador de ACs da Unifal"
                 />
                 <p><strong>Simulador de ACs da Unifal</strong></p>
@@ -136,7 +136,7 @@
                     "
                   >
                     <img
-                      src="../../assets/images/macros.png"
+                      src="@/assets/images/macros.png"
                       alt="Screenshot do aplicativo Macros"
                       style="max-height: 630px"
                     />
@@ -165,7 +165,7 @@
 
         <CarouselContainer>
             <CarouselSlide>
-                <img src="../assets/images/pagina-inicial.png" alt="Screenshot" />
+                <img src="@/assets/images/pagina-inicial.png" alt="Screenshot" />
                 <p>
                   <strong>Exibição Clara das Funcionalidades Principais</strong>
                 </p>
@@ -181,7 +181,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/cognitiva.png" alt="Screenshot da interface" />
+                <img src="@/assets/images/cognitiva.png" alt="Screenshot da interface" />
                 <p>
                   <strong
                     >Facilidade para Encontrar Elementos de Interface
@@ -197,7 +197,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/cognitiva-2.png" alt="Screenshot" />
+                <img src="@/assets/images/cognitiva-2.png" alt="Screenshot" />
                 <p>
                   <strong>Feedback Instantâneo e de Fácil Entendimento</strong>
                 </p>
@@ -211,7 +211,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/cognitiva-3.png" alt="Screenshot" />
+                <img src="@/assets/images/cognitiva-3.png" alt="Screenshot" />
                 <p>
                   <strong>Indicadores de Estado</strong>
                 </p>
@@ -243,7 +243,7 @@
 
         <CarouselContainer>
             <CarouselSlide>
-                <img src="../../assets/images/pagina-inicial.png" alt="Screenshot" />
+                <img src="@/assets/images/pagina-inicial.png" alt="Screenshot" />
                 <p>
                   <strong>Definimos a nossa mensagem para o usuário</strong>
                 </p>
@@ -264,7 +264,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/semiotica.png" alt="Screenshot da interface" />
+                <img src="@/assets/images/semiotica.png" alt="Screenshot da interface" />
                 <p>
                   <strong
                     >Identificamos os Conceitos-Chave e os Tornamos
@@ -280,7 +280,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/semiotica-2.png" alt="Screenshot" />
+                <img src="@/assets/images/semiotica-2.png" alt="Screenshot" />
                 <p>
                   <strong>Projetamos a Argumentação</strong>
                 </p>
@@ -296,7 +296,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/semiotica-3.png" alt="Screenshot" />
+                <img src="@/assets/images/semiotica-3.png" alt="Screenshot" />
                 <p>
                   <strong>Tentamos Previnir Erros de Comunicação</strong>
                 </p>
@@ -330,7 +330,7 @@
 
         <CarouselContainer>
             <CarouselSlide>
-                <img src="../../assets/images/eventos.png" alt="Screenshot" />
+                <img src="@/assets/images/eventos.png" alt="Screenshot" />
                 <p>
                   <strong>Lei de Hick-Hyman</strong>
                 </p>
@@ -348,7 +348,7 @@
             </CarouselSlide>
             <CarouselSlide>
                 <img
-                  src="../../assets/images/eventos-new.png"
+                  src="@/assets/images/eventos-new.png"
                   alt="Screenshot da interface"
                 />
                 <p>
@@ -363,7 +363,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/pagina-inicial-3.png" alt="Screenshot" />
+                <img src="@/assets/images/pagina-inicial-3.png" alt="Screenshot" />
                 <p>
                   <strong>Lei de Fitts</strong>
                 </p>
@@ -380,7 +380,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/pagina-inicial-eventos.png" alt="Screenshot" />
+                <img src="@/assets/images/pagina-inicial-eventos.png" alt="Screenshot" />
                 <p>
                   <strong>Lei de Fitts</strong>
                 </p>
@@ -393,7 +393,7 @@
             </CarouselSlide>
             <CarouselSlide>
                 <img
-                  src="../../assets/images/atividades.png"
+                  src="@/assets/images/atividades.png"
                   alt="Screenshot da tela de regras de ACs"
                 />
                 <p><strong>Psicologia das Cores</strong></p>
@@ -414,7 +414,7 @@
             </CarouselSlide>
             <CarouselSlide>
                 <img
-                  src="../../assets/images/psicologia.png"
+                  src="@/assets/images/psicologia.png"
                   alt="Screenshot da tela de lista de ACs"
                 />
                 <p><strong>Psicologia das Cores</strong></p>
@@ -479,7 +479,7 @@
             </CarouselSlide>
             <CarouselSlide>
                 <img
-                  src="../../assets/images/pagina-inicial-3.png"
+                  src="@/assets/images/pagina-inicial-3.png"
                   alt="Screenshot da interface"
                 />
                 <p>
@@ -498,7 +498,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/pagina-inicial.png" alt="Screenshot" />
+                <img src="@/assets/images/pagina-inicial.png" alt="Screenshot" />
                 <p>
                   <strong>Continuidade</strong>
                 </p>
@@ -516,7 +516,7 @@
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/cognitiva-2.png" alt="Screenshot" />
+                <img src="@/assets/images/cognitiva-2.png" alt="Screenshot" />
                 <p>
                   <strong>Figura-Fundo</strong>
                 </p>

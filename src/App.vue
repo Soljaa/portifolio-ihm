@@ -1,8 +1,10 @@
 <template>
-  <HeaderNav></HeaderNav>
-  <main style="margin: auto;" v-for="sec in current_sections" :key="sec">
+  <HeaderNav @go-to-index="changeToIndex" @go-to-entrega-um="changeToEntrega1" @go-to-entrega-dois="changeToEntrega2"></HeaderNav>
+
+  <main style="margin: auto;" v-for="sec in current_sections" ref="sections" :key="sec">
     <component :is="sec"></component>
   </main>
+
 </template>
 
 <script>
@@ -19,34 +21,28 @@ import SectionQualitativa from './components/StaticSections/SectionQualitativa.v
 import SectionQuestionario from './components/StaticSections/SectionQuestionario.vue';
 import SectionTarefas from './components/StaticSections/SectionTarefas.vue';
 
+import { ref, useTemplateRef, onMounted } from 'vue'
+
 export default {
   name: 'App',
   setup(){
-    // Seleciona todas as imagens das seções
-    const images = document.querySelectorAll("section img");
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImage");
-    const closeBtn = document.querySelector(".close");
 
-    images.forEach((img) => {
-      img.style.cursor = "zoom-in";
-      img.addEventListener("click", () => {
-        modal.style.display = "block";
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-      });
-    });
 
-    closeBtn.onclick = () => {
-      modal.style.display = "none";
-    };
 
-    window.onclick = (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
-      }
-    };
+    const changeToEntrega1 = () => {
+      current_sections.value = analise_sit_sections
 
+    }
+
+    const changeToEntrega2 = () => {
+      current_sections.value = sintese_protot_sections
+      console.log(current_sections.value)
+    }
+
+    const changeToIndex = () => {
+      current_sections.value = index_sections
+      console.log(current_sections.value)
+    }
 
 
     const index_sections = [SectionPrincipal]
@@ -67,9 +63,11 @@ export default {
       SectionPrototipo
     ]
 
-    let current_sections = index_sections
+    let current_sections = ref(index_sections)
 
-    return { current_sections }
+    let sectionsRef = useTemplateRef('sections')    
+
+    return { current_sections, sectionsRef, changeToEntrega1, changeToEntrega2, changeToIndex }
   },
   components: {
     HeaderNav,
