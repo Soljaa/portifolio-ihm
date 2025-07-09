@@ -1,5 +1,5 @@
 <template>
-  <HeaderNav @go-to-index="changeToIndex" @go-to-entrega-um="changeToEntrega1" @go-to-entrega-dois="changeToEntrega2"></HeaderNav>
+  <HeaderNav :index-path="'/'" :first-path="'/analise-sit'" :second-path="'/sint-prot'"></HeaderNav>
 
   <main style="margin: auto;" v-for="sec in current_sections" ref="sections" :key="sec">
     <component :is="sec"></component>
@@ -21,30 +21,11 @@ import SectionQualitativa from './components/StaticSections/SectionQualitativa.v
 import SectionQuestionario from './components/StaticSections/SectionQuestionario.vue';
 import SectionTarefas from './components/StaticSections/SectionTarefas.vue';
 
-import { ref, useTemplateRef, onMounted } from 'vue'
+import { ref, useTemplateRef, computed } from 'vue'
 
 export default {
   name: 'App',
   setup(){
-
-
-
-    const changeToEntrega1 = () => {
-      current_sections.value = analise_sit_sections
-
-    }
-
-    const changeToEntrega2 = () => {
-      current_sections.value = sintese_protot_sections
-      console.log(current_sections.value)
-    }
-
-    const changeToIndex = () => {
-      current_sections.value = index_sections
-      console.log(current_sections.value)
-    }
-
-
     const index_sections = [SectionPrincipal]
 
     const analise_sit_sections = [
@@ -63,11 +44,29 @@ export default {
       SectionPrototipo
     ]
 
-    let current_sections = ref(index_sections)
+    const routes = {
+      '/' : index_sections,
+      '/analise-sit': analise_sit_sections,
+      '/sint-prot': sintese_protot_sections,
+    }
 
-    let sectionsRef = useTemplateRef('sections')    
 
-    return { current_sections, sectionsRef, changeToEntrega1, changeToEntrega2, changeToIndex }
+    let sectionsRef = useTemplateRef('sections')   
+
+    const currentPath = ref(window.location.hash)
+
+    window.addEventListener('hashchange', () => {
+      currentPath.value = window.location.hash
+      console.log('triggered')
+    })
+
+    const current_sections = computed(() => {
+      console.log(currentPath)
+      console.log(routes[currentPath.value.slice(1) || '/'] || routes['/'])
+      return routes[currentPath.value.slice(1) || '/'] || routes['/']
+    })
+
+    return { sectionsRef, current_sections}
   },
   components: {
     HeaderNav,
