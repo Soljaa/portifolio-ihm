@@ -4,7 +4,7 @@
                       icon="fa-search">
       
 
-        <img alt="matriz csd" src="./../../assets/images/csd.jpg" />
+        <img alt="matriz csd" src="@/assets/images/csd.jpg" />
 
     </SectionComponent>
 </template>

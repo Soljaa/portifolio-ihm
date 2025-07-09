@@ -458,7 +458,7 @@
                   <strong>Princípios de Gestalt</strong>
                 </p>
                 <img
-                  src="images/gestalt.jpg"
+                  src="@/assets/images/gestalt.jpg"
                   alt="Um exemplo de um princípio de Gestalt"
                   style="max-height: 630px"
                 />

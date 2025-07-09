@@ -4,7 +4,7 @@
                       icon="fa-chart-line">
       
 
-        <img alt="matriz csd" src="./../../assets/images/comparativa.jpg" />
+        <img alt="matriz csd" src="@/assets/images/comparativa.jpg" />
 
     </SectionComponent>
 </template>

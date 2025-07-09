@@ -163,19 +163,19 @@
 
         <CarouselContainer>
             <CarouselSlide>
-                <img src="../../assets/images/crazy4-1.jpeg" alt="Screenshot" />
+                <img src="@/assets/images/crazy4-1.jpeg" alt="Screenshot" />
                 <p>
                   <strong>Soluções do Daniel</strong>
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/crazy4-2.jpeg" alt="Screenshot" />
+                <img src="@/assets/images/crazy4-2.jpeg" alt="Screenshot" />
                 <p>
                   <strong>Soluções do Rodrigo</strong>
                 </p>
             </CarouselSlide>
             <CarouselSlide>
-                <img src="../../assets/images/crazy4-5.jpeg" alt="Screenshot" />
+                <img src="@/assets/images/crazy4-5.jpeg" alt="Screenshot" />
                 <p>
                   <strong>Ideias Aproveitadas</strong>
                 </p>

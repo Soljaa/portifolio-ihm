@@ -8,7 +8,7 @@
         <div class="left-column">
             <div class="persona-image-container">
             <img
-                src="images/lucas.jpg"
+                src="@/assets/images/lucas.jpg"
                 alt="Lucas Menezes"
                 class="persona-image"
             />

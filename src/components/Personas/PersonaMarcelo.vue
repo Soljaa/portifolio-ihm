@@ -8,7 +8,7 @@
         <div class="left-column">
             <div class="persona-image-container">
             <img
-                src="images/marcelo.jpg"
+                src="@/assets/images/marcelo.jpg"
                 alt="Marcelo Villa"
                 class="persona-image"
             />
