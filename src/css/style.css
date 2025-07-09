@@ -75,12 +75,7 @@ img {
 
 .header-nav .selected {
   text-decoration: underline;
-  
 }
-
-
-
-
 
 .sticky-navigation-sidebar {
   position: -webkit-sticky;
@@ -102,9 +97,7 @@ img {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.192);
 }
 
-
-
-.sticky-navigation-sidebar strong{
+.sticky-navigation-sidebar strong {
   color: var(--text-light);
 }
 
@@ -123,9 +116,6 @@ img {
   opacity: 0.8;
   text-decoration: underline;
 }
-
-
-
 
 main {
   max-width: 1200px;
@@ -186,6 +176,10 @@ section li {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
 
+hr {
+  margin: 2rem 0;
+}
+
 .image-container {
   margin: 2rem 0;
   text-align: center;
@@ -216,7 +210,6 @@ iframe {
   align-items: center;
 }
 
-
 @media screen and (min-width: 1507px) {
   main {
     margin-top: -8%;
@@ -224,36 +217,34 @@ iframe {
 }
 
 @media screen and (max-width: 1506px) {
-  
   /*Side bar se torna um menu superior*/
   .sticky-navigation-sidebar {
     position: inherit;
-    
+
     width: auto;
     max-width: 1200px;
     margin: 1.5rem auto;
     align-self: center;
     justify-self: center;
 
-    top:auto;
+    top: auto;
     left: auto;
   }
 }
 
 /*workaround ruim*/
 @media screen and (max-width: 1202px) {
-  
   /*Side bar se torna um menu superior*/
   .sticky-navigation-sidebar {
     position: inherit;
-    
+
     width: auto;
     max-width: 1200px;
     margin: 2rem;
     align-self: center;
     justify-self: center;
 
-    top:auto;
+    top: auto;
     left: auto;
   }
 }
@@ -533,4 +524,12 @@ iframe {
   .carousel-text-column {
     margin-bottom: 15px; /* Adiciona espaçamento entre o texto e a imagem quando empilhados */
   }
+}
+
+.carousel-slides li {
+  text-align: left;
+}
+
+.carousel-slide ol {
+  margin: 0 75px;
 }
