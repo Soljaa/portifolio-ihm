@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Projeto de Design</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="persona.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <div>
+          <strong
+            ><a href="https://soljaa.github.io/portifolio-ihm/"
+              >Sistema de Organização de Atividades Complementares</a
+            ></strong
+          >
+        </div>
+        <div class="nav-items-container">
+          <div class="nav-item-wrapper">
+            <a href="https://soljaa.github.io/portifolio-ihm/analise_sit.html"
+              >Análise da Situação Atual</a
+            >
+          </div>
+          <div class="nav-item-wrapper">
+            <a
+              href="https://soljaa.github.io/portifolio-ihm/sintese_protot.html"
+              class="selected"
+              >Síntese e prototipação</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="sticky-navigation-sidebar">
+      <strong>Conteúdo: </strong>
+      <nav class="sidebar-nav">
+        <a href="#personas">Personas</a>
+        <a href="#cenarios">Cenários Problema</a>
+        <a href="#tarefas">Análise de Tarefas</a>
+        <a href="#crazy4">Crazy 4</a>
+        <a href="#prototipo">Protótipo</a>
+      </nav>
+    </div>
+
+    <main>
+      <section id="personas">
+        <div class="section-bg">
+          <h2><i class="fas fa-user"></i>Personas e Cenários Problema</h2>
+          <p>
+            <strong>Personas</strong> são
+            <strong>personagens fictícios</strong> que criamos a partir de
+            pesquisas com usuários reais. Elas nos ajudam a ter uma
+            <strong>visão mais clara</strong> sobre quem usará a solução
+            proposta. Esses personagens são essenciais para o time de design,
+            pois permitem que a gente entenda as
+            <strong>necessidades, dificuldades e expectativas</strong> de
+            diferentes tipos de usuários. As personas funcionam como um
+            <strong>guia</strong>, mostrando para quem o design está sendo
+            realmente feito.
+          </p>
+
+          <p>
+            É importante lembrar que as personas são baseadas em
+            <strong>dados reais</strong>, coletados de diversas pessoas, mas
+            <strong>não descrevem um usuário específico</strong>. Em vez disso,
+            elas representam <strong>arquétipos</strong> dos usuários mais
+            comuns, e até mesmo os extremos, quando necessário.
+          </p>
+
+          <h3>Como Chegamos a Essas Personas</h3>
+          <p>
+            Para criar essas personas, realizamos uma
+            <strong
+              >análise aprofundada dos dados coletados na etapa de
+              imersão</strong
+            >. Esse processo de análise foi feito passando pelas seguintes
+            etapas:
+          </p>
+          <ul>
+            <li>
+              <strong>Organização e consolidação dos dados brutos</strong>:
+              Agrupamos as informações da etapa anterior em um formato
+              centralizado e de fácil consulta.
+            </li>
+            <li>
+              <strong>Identificação de padrões e semelhanças</strong>:
+              Analisamos os dados para encontrar tendências em comportamentos,
+              frustrações recorrentes, objetivos e motivações compartilhadas,
+              além de opiniões e atitudes semelhantes sobre o processo atual ou
+              uma solução ideal. <br />
+              Por exemplo, um padrão identificado nas respostas sobre
+              dificuldades foi a
+              <strong
+                >"falta de clareza e centralização das informações sobre o
+                processo de atividades complementares"</strong
+              >. Várias respostas indicam dúvidas sobre "para onde enviar",
+              "quantas horas cada certificado vale", "regras de horas", "quando
+              enviar", e a dificuldade em "encontrar todas as informações
+              necessárias em um único veículo de informação". Esse padrão sugere
+              uma forte necessidade por um guia claro e um portal unificado.
+            </li>
+            <li>
+              <strong>Criação de segmentos de usuários</strong>: Com base nos
+              padrões identificados, definimos
+              <strong>grupos distintos de usuários</strong>. Cada grupo
+              representou um conjunto de características, comportamentos, dores
+              e objetivos que o diferenciava dos demais.<br />
+              Aqui notamos que o principal fator de segmentação entre os
+              usuários era o <strong>tempo de curso</strong>. Alunos em estágios
+              semelhantes do curso tendiam a ter experiências parecidas com as
+              atividades complementares. Estudantes no início do curso
+              frequentemente relatavam a
+              <strong>falta de informações claras sobre as regras de ACs</strong
+              >, enquanto aqueles próximos de concluir (ou que já concluíram)
+              suas ACs apontavam problemas relacionados ao
+              <strong
+                >processo de entrega e contabilização das atividades</strong
+              >.
+            </li>
+            <li>
+              <strong>Desenvolvimento das personas</strong>: Para cada segmento,
+              foi criada uma persona detalhada, incluindo um nome fictício,
+              dados demográficos relevantes, um breve histórico, personalidade,
+              objetivos, dores, uma citação que a representa e um cenário de
+              uso. O foco foi nos detalhes mais importantes para o projeto,
+              evitando informações desnecessárias.
+            </li>
+            <li>
+              <strong>Validação e refinamento</strong>: As personas foram
+              compartilhadas e discutidas com a equipe para garantir que
+              realmente representam os usuários da pesquisa e são úteis para as
+              decisões de design, permitindo ajustes e refinamentos conforme o
+              projeto avança.
+            </li>
+          </ul>
+          <p>
+            Com base em todas essas informações consolidadas e analisadas,
+            chegamos às personas a seguir. Nosso objetivo foi desenvolver
+            personagens que
+            <strong>abrangem a diversidade de todos os nossos usuários</strong>
+            em potencial, representando alunos em
+            <strong>diferentes fases do curso</strong> e com
+            <strong>experiências variadas</strong> em relação às atividades
+            complementares.
+          </p>
+          <br />
+          <h3>Personas</h3>
+          <br />
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide" style="padding: 0">
+                <div class="persona">
+                  <header class="portfolio-header">
+                    <h2 class="portfolio-title">Larissa Alves</h2>
+                  </header>
+
+                  <div class="profile-main-content">
+                    <div class="left-column">
+                      <div class="persona-image-container">
+                        <img
+                          src="images/larissa.jpg"
+                          alt="Larissa Alves"
+                          class="persona-image"
+                        />
+                      </div>
+                      <p class="motivation-quote">
+                        "Preciso começar a me planejar agora!"
+                      </p>
+
+                      <div class="persona-details-card">
+                        <p>Idade: <strong>19</strong></p>
+                        <p>Curso: <strong>Ciência da Computação</strong></p>
+                        <p>Período: <strong>2º Período</strong></p>
+                        <p>
+                          Cidade:
+                          <strong>Rio de Janeiro, Rio de Janeiro</strong>
+                        </p>
+                        <p>Status: Usuário Primário</p>
+                      </div>
+
+                      <div class="skills-container">
+                        <div class="skill-item">
+                          <span class="skill-label">Ferramentas Digitais</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label"
+                            >Resolução de Problemas</span
+                          >
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 65%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Organização Pessoal</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 90%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Burocracia</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 40%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Sociabilidade</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 55%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Gestão de Tempo</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 85%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="middle-column">
+                      <div class="tag-container">
+                        <ul>
+                          <li>Organizada</li>
+                          <li>Estudiosa</li>
+                          <li>Prestativa</li>
+                        </ul>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="section-title">Objetivos</h2>
+                        <ul>
+                          <li>Entrar em um projeto de extensão.</li>
+                          <li>Ser aprovada nas matérias atuais.</li>
+                          <li>
+                            Aprender a programar além do básico das primeiras
+                            aulas.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Frustrações</h2>
+                        <ul>
+                          <li>
+                            Ela sente que só fica sabendo sobre alguns eventos
+                            depois que eles acabam.
+                          </li>
+                          <li>
+                            Ela quer planejar quais atividades complementares
+                            ela quer fazer, mas fazer os cálculos manualmente é
+                            trabalhoso.
+                          </li>
+                          <li>
+                            Não entende o funcionamento de processos como a
+                            inscrição em matérias no período de ajustes,
+                            trancamento e envio de horas complementares.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block persona-bio">
+                        <h2 class="section-title">Bio</h2>
+                        <p>
+                          Larissa Alves entrou na universidade há pouco tempo e
+                          ainda não conhece todas as opções de atividades fora
+                          da sala de aula. Ela já ouviu falar da empresa júnior
+                          e assistiu palestras em tópicos de seu interesse, mas
+                          não está se preocupando com horas complementares
+                          ainda. Metódica e responsável, ela está acostumada a
+                          usar aplicativos de organização pessoal, seja para
+                          estudos, finanças ou sua rotina diária.
+                        </p>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="section-title">Relacionamentos</h2>
+                        <ul>
+                          <li>Costuma tirar dúvidas com os veteranos.</li>
+                          <li>
+                            Participa de alguns grupos de Whatsapp/Telegram da
+                            universidade
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="right-column">
+                      <div class="content-block">
+                        <h2 class="section-title">Expectativas</h2>
+                        <ul>
+                          <li>
+                            Espera que a aplicação tenha um design amigável e
+                            moderno.
+                          </li>
+                          <li>
+                            Quer poder experimentar com diferentes combinações
+                            de atividades e horas realizadas em cada.
+                          </li>
+                          <li>
+                            Espera poder marcar quais atividades foram
+                            concluídas conforme ela avança no curso.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Requisitos</h2>
+                        <ul>
+                          <li>
+                            A interface deve funcionar bem em dispositivos
+                            mobile.
+                          </li>
+                          <li>
+                            Deve ser fácil incluir, remover e alterar as horas
+                            de uma atividade.
+                          </li>
+                          <li>
+                            O sistema deve apresentar para ela todas as opções
+                            de atividade possíveis.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Tarefas Críticas</h2>
+                        <ul>
+                          <li>
+                            Tirar dúvidas sobre o processo de envio de atividades complementares.
+                          </li>
+                          <li>
+                            Se informar sobre os eventos que fornecem horas complementares.
+                          </li>
+                          <li>
+                            Planejar quais atividades ela pode fazer.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide" style="padding: 0">
+                <div class="persona">
+                  <header class="portfolio-header">
+                    <h2 class="portfolio-title">Lucas Menezes</h2>
+                  </header>
+
+                  <div class="profile-main-content">
+                    <div class="left-column">
+                      <div class="persona-image-container">
+                        <img
+                          src="images/lucas.jpg"
+                          alt="Lucas Menezes"
+                          class="persona-image"
+                        />
+                      </div>
+                      <p class="motivation-quote">
+                        "Pô eu fui naquele minicurso período passado... será que
+                        eu ainda acho o certificado?"
+                      </p>
+
+                      <div class="persona-details-card">
+                        <p>Idade: <strong>21</strong></p>
+                        <p>Curso: <strong>Ciência da Computação</strong></p>
+                        <p>Período: <strong>5º Período</strong></p>
+                        <p>
+                          Cidade:
+                          <strong>Niterói, Rio de Janeiro</strong>
+                        </p>
+                        <p>Status: Usuário Primário</p>
+                      </div>
+
+                      <div class="skills-container">
+                        <div class="skill-item">
+                          <span class="skill-label">Ferramentas Digitais</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 80%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label"
+                            >Resolução de Problemas</span
+                          >
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Organização Pessoal</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 40%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Burocracia</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 10%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Sociabilidade</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 75%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Gestão de Tempo</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 25%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="middle-column">
+                      <div class="tag-container">
+                        <ul>
+                          <li>Notebook</li>
+                          <li>Celular</li>
+                          <li>Google Drive</li>
+                          <li>Trello</li>
+                        </ul>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="section-title">Objetivos</h2>
+                        <ul>
+                          <li>
+                            Conseguir um bom estágio nos próximos períodos, que
+                            o ajude a aplicar o que aprende na prática.
+                          </li>
+                          <li>
+                            Ampliar seu portfólio acadêmico participando de
+                            eventos, projetos e iniciativas extracurriculares.
+                          </li>
+                          <li>
+                            Se formar dentro do prazo, evitando surpresas com
+                            burocracias no final do curso.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Frustrações</h2>
+                        <ul>
+                          <li>
+                            Falta de informação clara sobre regras das
+                            atividades complementares.
+                          </li>
+                          <li>
+                            Dificuldade de manter tudo organizado (certificados,
+                            etc).
+                          </li>
+                          <li>
+                            Não saber sobre onde e como registrar as atividades.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block persona-bio">
+                        <h2 class="section-title">Bio</h2>
+                        <p>
+                          Lucas Menezes está no 5º período de Ciência da
+                          Computação na UFF. Já terminou as disciplinas mais
+                          básicas do início do curso, e agora começa a se
+                          interessar por atividades que o conectem ao mercado.
+                          Está começando a pesquisar sobre os diferentes tipos
+                          de estágio que pode fazer, tentando entender como
+                          funcionam os trâmites da universidade.
+                        </p>
+                        <p>
+                          Embora se vire bem com tecnologia e ferramentas de
+                          organização, Lucas sente dificuldade com algumas
+                          regras pouco claras do curso, como o regulamento das
+                          atividades complementares. Já participou de
+                          minicursos, hackathons e semanas acadêmicas, mas
+                          muitas vezes esqueceu de guardar ou organizar os
+                          comprovantes. Isso o preocupa, já que quer evitar
+                          correrias no final do curso.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="right-column">
+                      <div class="content-block">
+                        <h2 class="section-title">Expectativas</h2>
+                        <ul>
+                          <li>
+                            Espera visualizar com clareza as regras e categorias
+                            de atividades.
+                          </li>
+                          <li>
+                            Quer organizar as atividades por categoria e que ser
+                            avisado sobre horas restantes ou concluídas.
+                          </li>
+                          <li>
+                            Busca facilidade para anexar comprovantes em
+                            diferentes formatos (PDF, imagem, link).
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Requisitos</h2>
+                        <ul>
+                          <li>
+                            Interface amigável e responsiva (acesso via
+                            computador e celular).
+                          </li>
+                          <li>
+                            Sistema validado pela coordenação do curso (ou ao
+                            menos esteja bem alinhado com as regras do curso).
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Tarefas Críticas</h2>
+                        <ul>
+                          <li>
+                            Registrar atividades complementares assim que forem
+                            realizadas.
+                          </li>
+                          <li>
+                            Fazer upload e backup dos certificados e
+                            comprovantes.
+                          </li>
+                          <li>
+                            Verificar se está cumprindo os requisitos das
+                            categorias exigidas pela coordenação.
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="section-title">Relacionamentos</h2>
+                        <ul>
+                          <li>
+                            Gerenciar suas atividades complementares.
+                          </li>
+                          <li>
+                            Descobrir novos eventos e registrar novas atividades.
+                          </li>
+                          <li>
+                            Acompanhar quantas horas complementares já tem completas.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide" style="padding: 0">
+                <div class="persona">
+                  <header class="portfolio-header">
+                    <h2 class="portfolio-title">Natália Fernandes (Desconsiderada)</h2>
+                  </header>
+
+                  <div class="profile-main-content">
+                    <div class="left-column">
+                      <div class="persona-image-container">
+                        <img
+                          src="images/natalia.jpg"
+                          alt="Natália Fernandes"
+                          class="persona-image"
+                        />
+                      </div>
+                      <p class="motivation-quote">
+                        "Ainda não cheguei a ver direito as coisas das
+                        atividades complementares."
+                      </p>
+
+                      <div class="persona-details-card">
+                        <p>Idade: <strong>22</strong></p>
+                        <p>Curso: <strong>Ciência da Computação</strong></p>
+                        <p>Período: <strong>4º Período</strong></p>
+                        <p>
+                          Cidade:
+                          <strong>Niterói, Rio de Janeiro</strong>
+                        </p>
+                        <p>Status: Usuário Primário</p>
+                      </div>
+
+                      <div class="skills-container">
+                        <div class="skill-item">
+                          <span class="skill-label">Ferramentas Digitais</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label"
+                            >Resolução de Problemas</span
+                          >
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 60%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Organização Pessoal</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 20%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Burocracia</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 25%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Sociabilidade</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 75%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Gestão de Tempo</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 25%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="middle-column">
+                      <div class="tag-container">
+                        <ul>
+                          <li>Miro</li>
+                          <li>Celular</li>
+                        </ul>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="section-title">Objetivos</h2>
+                        <ul>
+                          <li>Garantir um alto rendimento na faculdade.</li>
+                          <li>
+                            Participar de atividades complementares quando
+                            puder.
+                          </li>
+                          <li>
+                            Reduzir a ansiedade e a sensação de desorganização.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Frustrações</h2>
+                        <ul>
+                          <li>
+                            Dificuldade de manter equilíbrio entre vida social e
+                            faculdade.
+                          </li>
+                          <li>
+                            Dificuldade de arrumar tempo para participar de
+                            horas complementares.
+                          </li>
+                          <li>
+                            Dificuldades em como descobrir eventos acontecendo
+                            na UFF.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block persona-bio">
+                        <h2 class="section-title">Bio</h2>
+                        <p>
+                          Natália Fernandes está atualmente no 4º período do
+                          curso de Ciência da Computação na UFF. Embora ainda
+                          esteja cursando disciplinas básicas, já passou da fase
+                          de adaptação e não se considera mais uma novata na
+                          universidade.
+                        </p>
+                        <p>
+                          Apesar do tempo de casa, Natália ainda encontra
+                          dificuldades para se manter informada sobre eventos,
+                          palestras e outras atividades extracurriculares que
+                          contam para as horas complementares. Quando descobre
+                          algo de interesse, muitas vezes já está ocupada com
+                          compromissos pessoais — como cuidar de seu irmão mais
+                          novo —, demandas acadêmicas ou momentos de lazer
+                          necessários para equilibrar sua rotina.
+                        </p>
+                        <p>
+                          Como resultado, mesmo após quase dois anos de
+                          graduação, Natália acumula poucos certificados e
+                          sente-se perdida sobre como começar a organizar suas
+                          horas complementares. Ela gostaria de uma forma mais
+                          prática e centralizada de acompanhar oportunidades e
+                          gerir seu progresso.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="right-column">
+                      <div class="content-block">
+                        <h2 class="section-title">Expectativas</h2>
+                        <ul>
+                          <li>
+                            Espera que o aplicativo facilite a visualização e o
+                            acompanhamento das suas horas complementares
+                          </li>
+                          <li>
+                            Deseja receber notificações sobre eventos relevantes
+                            com antecedência suficiente para poder se organizar.
+                          </li>
+                          <li>
+                            Quer se sentir mais no controle do processo, sem
+                            precisar buscar informações em várias fontes
+                            desconexas.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Requisitos</h2>
+                        <ul>
+                          <li>
+                            Interface simples e intuitiva, que não exija muito
+                            tempo de aprendizado.
+                          </li>
+                          <li>
+                            Integração com fontes confiáveis de eventos da UFF
+                            (como sites de departamentos ou centros acadêmicos).
+                          </li>
+                          <li>
+                            Funcionalidade para armazenar certificados,
+                            registrar atividades e visualizar o progresso rumo à
+                            carga horária obrigatória.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Tarefas Críticas</h2>
+                        <ul>
+                          <li>
+                            Ser capaz de visualizar oportunidades disponíveis de
+                            forma filtrada (por tipo de atividade, data, carga
+                            horária, etc.).
+                          </li>
+                          <li>
+                            Registrar e gerenciar atividades complementares já
+                            realizadas, anexando certificados digitalmente.
+                          </li>
+                          <li>
+                            Receber alerta personalizados com base nos
+                            interesses e na disponibilidade de tempo da usuária.
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="section-title">Relacionamentos</h2>
+                        <ul>
+                          <li>
+                            Depende principalmente de colegas de turma para
+                            descobrir eventos e palestras.
+                          </li>
+                          <li>
+                            Às vezes vê anúncios em grupos de WhatsApp ou redes
+                            sociais, mas sente que as informações são dispersas
+                            e fáceis de perder.
+                          </li>
+                          <li>
+                            Gostaria de ter uma fonte central e oficial de
+                            informações, já que nem sempre tem tempo para
+                            acompanhar todas as conversas e canais.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide" style="padding: 0">
+                <div class="persona">
+                  <header class="portfolio-header">
+                    <h2 class="portfolio-title">Marcelo Villa</h2>
+                  </header>
+
+                  <div class="profile-main-content">
+                    <div class="left-column">
+                      <div class="persona-image-container">
+                        <img
+                          src="images/marcelo.jpg"
+                          alt="Marcelo Villa"
+                          class="persona-image"
+                        />
+                      </div>
+                      <p class="motivation-quote">
+                        "Preciso enviar esses certificados pra me formar e ser
+                        efetivado no estágio"
+                      </p>
+
+                      <div class="persona-details-card">
+                        <p>Idade: <strong>24</strong></p>
+                        <p>Curso: <strong>Ciência da Computação</strong></p>
+                        <p>Período: <strong>7º Período</strong></p>
+                        <p>
+                          Cidade:
+                          <strong>Rio de Janeiro, Rio de Janeiro</strong>
+                        </p>
+                        <p>Status: Usuário Primário</p>
+                      </div>
+
+                      <div class="skills-container">
+                        <div class="skill-item">
+                          <span class="skill-label">Ferramentas Digitais</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 75%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label"
+                            >Resolução de Problemas</span
+                          >
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Organização Pessoal</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 80%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Burocracia</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 20%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Sociabilidade</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 80%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <span class="skill-label">Gestão de Tempo</span>
+                          <div class="skill-bar-outer">
+                            <div
+                              class="skill-bar-inner"
+                              style="width: 40%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="middle-column">
+                      <div class="tag-container">
+                        <ul>
+                          <li>Macbook</li>
+                          <li>Notion</li>
+                          <li>Google Sheets</li>
+                        </ul>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="section-title">Objetivos</h2>
+                        <ul>
+                          <li>
+                            Concluir todas as horas complementares exigidas pela
+                            UFF antes do fim do 8º período.
+                          </li>
+                          <li>
+                            Organizar comprovantes e certificados de maneira que
+                            facilite a entrega para a coordenação.
+                          </li>
+                          <li>
+                            Evitar atrasos na colação de grau por pendências
+                            burocráticas.
+                          </li>
+                          <li>
+                            Ser efetivado na empresa onde estagia como
+                            desenvolvedor.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Frustrações</h2>
+                        <ul>
+                          <li>
+                            Dificuldade em controlar e comprovar as horas
+                            complementares
+                          </li>
+                          <li>
+                            Falta de clareza sobre quais atividades contam e
+                            como comprovar
+                          </li>
+                          <li>
+                            Medo de atrasar a formatura por algo "burocrático"
+                          </li>
+                          <li>
+                            Processo da universidade é confuso ou pouco prático.
+                          </li>
+                          <li>
+                            Não tem certeza se tem todas as horas necessárias
+                            para se formar
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block persona-bio">
+                        <h2 class="section-title">Bio</h2>
+                        <p>
+                          Marcelo tem 24 anos e está no 7º período de Ciência da
+                          Computação na UFF. Atualmente, estagia em um banco
+                          como analista de infraestrutura, onde trabalha 6 horas
+                          por dia e tem grande interesse por automações e
+                          soluções escaláveis. Já participou de uma empresa
+                          júnior e fez iniciação científica nos primeiros anos
+                          da graduação, além de ter comparecido a diversas
+                          palestras e eventos acadêmicos. Tem conhecimento com
+                          algumas linguagens de programação e ferramentas de
+                          engenharia de software. Embora sua rotina seja
+                          corrida, ele ainda arranja tempo para jogar alguns
+                          games e relaxar. Marcelo gosta do trabalho que faz, se
+                          motiva com desafios e está focado em se formar dentro
+                          do prazo para ser efetivado. Apesar de já tem algum
+                          controle de horas em uma planilha e guardar os
+                          certificados no seu computador, ele ainda tem alguns
+                          certificados perdidos. Seu maior obstáculo no momento
+                          é reunir e organizar todas as horas complementares
+                          exigidas pela universidade — ele quer evitar qualquer
+                          imprevisto que atrase a colação de grau, ele conhce as
+                          regras para o envio dos certificados e sabe que está
+                          no período correto definido pela cordenação.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="right-column">
+                      <div class="content-block">
+                        <h2 class="section-title">Expectativas</h2>
+                        <ul>
+                          <li>
+                            Visualizar claramente o quanto já completou e o que
+                            ainda falta em termos de horas complementares.
+                          </li>
+                          <li>
+                            Cadastrar atividades rapidamente, com campos simples
+                            e objetivos.
+                          </li>
+                          <li>
+                            Anexar certificados facilmente e deixá-los
+                            organizados por categoria.
+                          </li>
+                          <li>
+                            Preencher o documento com os certificados
+                            automaticamente para enviar pronto a cordenação
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Requisitos</h2>
+                        <ul>
+                          <li>
+                            Controle preciso das horas complementares, com
+                            categorização por tipo de atividade (ensino,
+                            pesquisa, extensão etc.) conforme exigido pela UFF.
+                          </li>
+                          <li>
+                            Upload e armazenamento seguro de comprovantes, como
+                            certificados e declarações em PDF ou imagem.
+                          </li>
+                          <li>
+                            Geração de um relatório completo e exportável,
+                            pronto para ser entregue à coordenação do curso.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content-block">
+                        <h2 class="section-title">Tarefas Críticas</h2>
+                        <ul>
+                          <li>Registrar suas horas complementares.</li>
+                          <li>
+                            Garantir que já tem todas as horas necessárias.
+                          </li>
+                          <li>
+                            Baixar um arquivo final para o envio para a
+                            coordenação
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="section-title">Relacionamentos</h2>
+                        <ul>
+                          <li>Tem grupos de whatsapp com colegas de curso.</li>
+                          <li>
+                            Acompanha os emails da coordenação e professores.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </section>
+      <section id="cenarios">
+        <div class="section-bg">
+          <h2><i class="fas fa-file-alt"></i>Cenários Problema</h2>
+          <p>
+            Um <strong>cenário</strong> é uma história detalhada sobre pessoas
+            realizando uma atividade específica. Ele deve ser concreto, rico em
+            detalhes contextuais e descrever situações de uso. É uma ferramenta
+            que pode ser utilizada em conjunto com as personas para aprofundar o
+            entendimento sobre as interações dos usuários com um sistema.
+          </p>
+
+          <br />
+
+          <div class="carousel-container cenario-problema-carousel">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <h2><strong>Larissa</strong></h2>
+                <h3>"Qual é o melhor caminho?"</h3>
+                <div>
+                  <ol>
+                    <li>
+                      Larissa ouviu de seus veteranos sobre a necessidade de
+                      realizar atividades complementares para poder se formar.
+                      Ela gostaria de saber quais é o minimo de atividades que
+                      ela tem que fazer ao longo do curso.
+                    </li>
+                    <li>
+                      Ela procura por informações no site do Instituto de
+                      Computação e, de fato, encontra um documento com a lista
+                      de atividades e as horas que cada pode contribuir no
+                      máximo.
+                    </li>
+                    <li>
+                      Porém, no processo de determinar em quais atividades ela
+                      deveria focar, ela tem que navegar entre as múltiplas
+                      páginas do arquivo e usar uma calculadora para somar o
+                      total de horas para alcançar o mínimo.
+                    </li>
+                    <li>
+                      Ela consegue encontrar algumas combinações que funcionam,
+                      mas o processo é chato e ela gostaria que houvesse uma
+                      forma mais fácil de visualizar o seu resultado final.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <h2><strong>Lucas</strong></h2>
+                <h3>"Vale a pena esse evento?"</h3>
+                <ol>
+                  <li>
+                    Durante uma aula, um professor de Lucas avisa a turma sobre
+                    um evento com certificado de participação, que ocorrerá no
+                    Instituto durante a próxima semana. O evento terá palestras
+                    que valem até 10 horas de atividade complementar. Lucas se
+                    interessa pelo tema do evento, mas não sabe se vale a pena
+                    participar, por não saber se precisa de horas nessa
+                    categoria ou se já está "coberto".
+                  </li>
+                  <li>
+                    Lucas então acessa o site do curso para tentar entender como
+                    funciona a divisão de categorias e qual é a carga horária
+                    mínima exigida por cada uma. Ele encontra um PDF antigo,
+                    pouco explicativo, e não se sente totalmente confiante se o
+                    evento vai ajudar a cumprir as horas restantes.
+                  </li>
+                  <li>
+                    A ponto de desistir de se inscrever, ele busca conselhos de
+                    alguns veteranos sobre as atividades complementares. Alguns
+                    dos seus colegas comentam que já tiveram problemas com
+                    validação de horas por falta de informações no certificado.
+                  </li>
+                  <li>
+                    Apesar das dificuldades, Lucas decide que vale a pena
+                    participar do evento e se inscreve nas palestras. Depois de
+                    comparecer ao evento, e já com os certificados em mãos, ele
+                    cria uma planilha no Google Sheets, coloca as informações
+                    das outras atividades que ele já fez (e que se lembrava)
+                    juntamente com as informações das atividades do evento mais
+                    recente. Depois disso, ele scaneia seus certificados e os
+                    salva numa pasta do Google Drive.
+                  </li>
+                  <li>
+                    Lucas considera que todo aquele trabalho demandou muito mais
+                    esforço que deveria, e que uma solução que permitisse a
+                    visualização das atividades que já completou e também
+                    permitisse classificar e salvar uma nova atividade com
+                    poucos cliques o ajudaria a tomar decisões melhores e
+                    organizar seu tempo de maneira mais adequada.
+                  </li>
+                </ol>
+              </div>
+              <div class="carousel-slide">
+                <h2><strong>Marcelo</strong></h2>
+                <h3>"Será que já tenho todas as horas que preciso?"</h3>
+                <ol>
+                  <li>
+                    Marcelo Villa, aluno do 7º período de Ciência da Computação,
+                    sabe que precisa comprovar 162 horas complementares e recebe
+                    um e-mail da coordenação avisando que chegou o momento de
+                    enviá-las.
+                  </li>
+                  <li>
+                    Ao decidir iniciar o processo, ele enfrenta seu primeiro
+                    problema: seus certificados estão completamente
+                    desorganizados, espalhados por e-mails, pastas no computador
+                    e na memória do celular.
+                  </li>
+                  <li>
+                    Para classificar cada atividade, ele precisa consultar
+                    repetidamente a tabela de pontuação no site da UFF, pois as
+                    categorias de ensino, pesquisa e extensão não são nada
+                    intuitivas para ele.
+                  </li>
+                  <li>
+                    Enquanto soma as horas, percebe que só atinge o mínimo
+                    necessário se considerar uma atividade que não está nas
+                    regras oficiais, baseando-se apenas no que um amigo lhe
+                    disse, o que o deixa inseguro.
+                  </li>
+                  <li>
+                    Depois de preencher manualmente todo o documento, ele envia
+                    para a coordenação, mas o arquivo é recusado por estar no
+                    formato incorreto, obrigando-o a correr para fazer ajustes
+                    de última hora.
+                  </li>
+                  <li>
+                    Devido ao processo de avaliação ser lento e sem um sistema
+                    de feedback claro, Marcelo só descobre semanas depois que
+                    ainda faltam 10 horas na categoria "Pesquisa".
+                  </li>
+                  <li>
+                    Essa descoberta tardia coloca em risco sua formatura no
+                    prazo e, consequentemente, a sua efetivação no estágio
+                    atual.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <button class="carousel-arrow carousel-arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots"></div>
+          </div>
+
+          <h3>Como os Cenários Ajudam no Design da Solução</h3>
+          <p>
+            A utilização de cenários é fundamental para o processo de design por
+            várias razões importantes:
+          </p>
+          <ul>
+            <li>
+              <strong>Destacam Objetivos</strong> Cenários evidenciam os
+              objetivos sugeridos pela aparência e pelo comportamento de um
+              sistema, ajudando a focar o design no que o usuário realmente quer
+              alcançar.
+            </li>
+            <li>
+              <strong>Levantam Questões e Novas Proposições</strong>: Quando um
+              aspecto não está bem descrito no cenário, ele provoca perguntas do
+              tipo "e se", estimulando a equipe a buscar respostas que completam
+              a história e geram novas ideias e proposições para a solução.
+            </li>
+            <li>
+              <strong>Feedback do Usuário Precoce</strong>: Permitem obter
+              feedback valioso dos usuários sem a necessidade de construir um
+              protótipo funcional completo, o que economiza tempo e recursos.
+            </li>
+            <li>
+              <strong>Avaliação de Alternativas de Design</strong>: Ajuda a
+              equipe a se colocar no lugar do usuário, avaliando constantemente
+              as alternativas de design em face dos cenários e personas, o que
+              pode reduzir a frequência de testes de usabilidade mais caros.
+            </li>
+            <li>
+              <strong>Resolução de Discordâncias</strong>: Cenários, em conjunto
+              com as personas, podem ser usados para resolver discordâncias
+              sobre decisões de design, referenciando as necessidades e
+              comportamentos dos usuários.
+            </li>
+          </ul>
+
+          <br />
+
+          <h3>Como Foram Criados os Cenários</h3>
+          <p>
+            Com base nas personas que criamos e nos dados levantados na etapa de
+            imersão (questionários, entrevistas, desk research), desenvolvemos
+            os cenários problema seguindo os seguintes passos:
+          </p>
+          <br />
+          <ol>
+            <li>
+              <strong>Definição do Objetivo do Cenário</strong>: Para cada
+              persona relevante, foram identificados um ou mais objetivos que
+              ela tenta alcançar ou um problema que enfrenta no contexto das
+              atividades complementares.
+            </li>
+            <li>
+              <strong>Construção da Narrativa</strong>: Escrevemos uma história
+              detalhada e sequencial, que inclui contexto da situação, atores
+              envolvidos, bem como objetivos, planejamento, ações e avaliação da
+              persona, e também os eventos decorridos das ações.
+            </li>
+            <li>
+              <strong>Identificação de Pontos Problemáticos</strong>: Durante a
+              escrita do cenário, foram listados pontos de problemas que
+              surgiram. Por exemplo, a dificuldade em encontrar informações
+              claras e centralizadas, a burocracia do processo de envio no final
+              do curso, ou a falta de acompanhamento das horas ao longo do
+              tempo.
+            </li>
+            <li>
+              <strong>Levantamento de Perguntas "E Se..."</strong>: O cenário
+              resultou em perguntas que levaram a novas proposições de design,
+              como: "E se o sistema mostrasse um gráfico com as horas de
+              atividades já concluídas?".
+            </li>
+          </ol>
+          <br />
+          <p>
+            Ao construir esses cenários, tivemos uma compreensão ainda mais
+            profunda dos desafios enfrentados pelos nossos usuários, o que nos
+            permitiu projetar uma solução mais intuitiva e eficaz, alinhada às
+            necessidades reais das personas.
+          </p>
+        </div>
+      </section>
+      <section id="tarefas">
+        <div class="section-bg">
+          <h2>
+            <i class="fas fa-tasks"></i>Análise de Tarefas: Hierarchical Task
+            Analysis (HTA)
+          </h2>
+          <p>
+            A Análise de Tarefas é uma etapa crucial no processo de design de
+            interação, pois nos permite entender detalhadamente como os usuários
+            realizam suas atividades e quais passos são envolvidos para atingir
+            seus objetivos. Para este projeto, optamos pela
+            <strong>Hierarchical Task Analysis (HTA)</strong> , uma abordagem
+            que nos permite decompor tarefas complexas em subtarefas menores e
+            mais gerenciáveis, revelando a estrutura hierárquica das ações do
+            usuário.
+          </p>
+          <br />
+          <h3>O que é a HTA e Como Ela Ajuda no Design da Solução?</h3>
+          <p>
+            A HTA é uma técnica utilizada para descrever a estrutura hierárquica
+            de uma tarefa complexa. Ela envolve a decomposição de uma "tarefa
+            principal" (ou objetivo geral) em "subtarefas" e "operações". A
+            representação visual da HTA geralmente se assemelha a uma árvore,
+            com a tarefa principal no topo e os níveis mais baixos detalhando as
+            ações específicas.
+          </p>
+          <br />
+          <p>Os elementos chave da HTA são:</p>
+          <ul>
+            <li>
+              <strong>Tarefas (Goals)</strong>: O que o usuário pretende
+              alcançar.
+            </li>
+            <li>
+              <strong>Subtarefas (Sub-goals)</strong>: As etapas intermediárias
+              necessárias para completar a tarefa principal.
+            </li>
+            <li>
+              <strong>Operações (Operations)</strong>: As ações mais básicas e
+              atômicas que não podem ser decompostas ainda mais (ex: clicar,
+              digitar).
+            </li>
+            <li>
+              <strong>Planos (Plans)</strong>: Descrevem as condições e a ordem
+              em que as subtarefas e operações devem ser executadas.
+            </li>
+          </ul>
+          <br />
+          <h3>Como Fizemos a HTA</h3>
+          <p>
+            Com base nos dados coletados na etapa de imersão (questionários,
+            entrevistas, análise comparativa) e nas personas que criamos,
+            realizamos a HTA seguindo os seguintes passos:
+          </p>
+          <ol>
+            <li>
+              <strong>Definição da Tarefa Principal (Goal)</strong>: A partir
+              dos cenários problema e dos objetivos das personas, selecionamos
+              uma tarefa de alto nível que nossos usuários precisam realizar.
+            </li>
+            <li>
+              <strong>Decomposição Hierárquica</strong>: A tarefa principal foi
+              decomposta em subtarefas. Cada subtarefa, se ainda for complexa,
+              foi decomposta em níveis inferiores até chegarmos a operações
+              básicas.
+            </li>
+            <li>
+              <strong>Detalhar Operações e Planos</strong>: Para cada subtarefa,
+              foram identificadas as operações específicas (ações do usuário) e
+              os planos que descrevem a ordem e as condições para sua execução.
+            </li>
+            <li>
+              <strong
+                >Identificação de Pontos de Oportunidade e Problemas</strong
+              >: A HTA nos permite visualizar onde o processo atual é mais
+              ineficiente, confuso ou propenso a erros, destacando oportunidades
+              para melhorias no design do sistema.
+            </li>
+          </ol>
+          <br />
+          <p>
+            Ao aplicar a HTA dessa maneira, obtivemos um mapa das ações dos
+            usuários, permitindo que o design da solução seja focado em melhoras
+            os passos e resolver os problemas específicos enfrentados nas etapas
+            de interação com o sistema.
+          </p>
+          <h3>Modelos de tarefas</h3>
+          <div>
+            <p><b>0. Encontrar informações sobre regras e eventos (Larissa)</b></p>
+        </div>
+    
+        <div>
+            <p><b>1. Tirar dúvidas sobre as ACs.</b></p>
+            <div style="padding-left: 20px;">
+                <p>1.1. Clicar no botão "Sobre Atividades Complementares".</p>
+                <p>1.2. Tirar as dúvidas sobre o processo e conferir a tabela de pontuação de ACs.</p>
+                <p>1.3. Clicar em "Perguntas Frequentes".</p>
+                <p>1.4. Tirar qualquer dúvida restante.</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>2. Buscar eventos próximos.</b></p>
+            <div style="padding-left: 20px;">
+                <p>2.1. Clicar na aba "Eventos".</p>
+                <p>2.2. Adicionar os filtros desejados para a busca.</p>
+                <p>2.3. Clicar em "Buscar".</p>
+                <p>2.4. Encontrar o evento desejado.</p>
+                <div style="padding-left: 20px;">
+                    <p>2.4.1. <b>Opção A:</b> Clicar no nome do Evento.</p>
+                    <p>2.4.2. <b>Opção B:</b> Clicar em "Mais informações".</p>
+                </div>
+                <p>2.5. Realizar a inscrição no evento pelo link externo.</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>3. Acessar o sistema para planejar as tarefas.</b></p>
+            <div style="padding-left: 20px;">
+                <p>3.1. Clicar no botão "Entrar".</p>
+                <p>3.2. Realizar a autenticação na plataforma idUFF (login e senha).</p>
+                <p>3.3. Clicar na aba "Eventos".</p>
+                <p>3.4. Adicionar os filtros desejados para a busca.</p>
+                <p>3.5. Clicar em "Buscar".</p>
+                <p>3.6. Encontrar um evento que ainda não ocorreu.</p>
+                <div style="padding-left: 20px;">
+                    <p>3.6.1. <b>Opção A:</b> Clicar no nome do Evento.</p>
+                    <p>3.6.2. <b>Opção B:</b> Clicar em "Mais informações".</p>
+                </div>
+                <p>3.7. Clicar em "Adicionar para Planejamento/Simulação".</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>Planos de Execução (Larissa)</b></p>
+            <p><b>Plano 1 (Primeira Visita - Exploratória)</b> Para entender como as atividades funcionam, realizar 1 (Entender e Simular); para descobrir oportunidades, realizar 2 (Buscar Eventos).</p>
+            <p><b>Plano 2 (Decisão e Conversão)</b> Realizar 2 (Buscar Eventos); para salvar um evento de interesse e iniciar um plano, realizar 3 (Criar Conta).</p>
+        </div>
+    
+        <hr>
+    
+        <div>
+            <p><b>0. Gerenciar e descobrir atividades complementares (Lucas)</b></p>
+        </div>
+    
+        <div>
+            <p><b>1. Acessar o sistema e carregar dados do aluno.</b></p>
+            <div style="padding-left: 20px;">
+                <p>1.1. Clicar no botão "Entrar".</p>
+                <p>1.2. Realizar a autenticação na plataforma idUFF (login e senha).</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>2. Gerenciar atividades existentes.</b></p>
+            <div style="padding-left: 20px;">
+                <p>2.1. Clicar em "Atividades Registradas".</p>
+                <p>2.2. Identificar o tipo de atividade desejada.</p>
+                <p>2.3. Clicar no tipo para expandir a lista de atividades realizadas daquele tipo.</p>
+                <p>2.4. Encontrar uma atividade específica.</p>
+                <div style="padding-left: 20px;">
+                    <p>2.4.1. <b>Opção A:</b> Clicar em "Remover do meu registro".</p>
+                    <div style="padding-left: 20px;">
+                        <p>2.4.1.1. Clicar em "Remover permanentemente".</p>
+                    </div>
+                    <p>2.4.2. <b>Opção B:</b> Clicar em "Editar atividade".</p>
+                    <div style="padding-left: 20px;">
+                        <p>2.4.2.1. Alterar os campos necessários.</p>
+                        <p>2.4.2.2. Clicar em "Salvar alterações".</p>
+                        <p>2.4.2.3. Clicar em "Confirmar edição".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>3. Descobrir e registrar novas atividades via Eventos.</b></p>
+            <div style="padding-left: 20px;">
+                <p>3.1. Clicar na aba "Eventos".</p>
+                <p>3.2. Adicionar os filtros desejados para a busca.</p>
+                <p>3.3. Clicar em "Buscar".</p>
+                <p>3.4. Encontrar o evento desejado.</p>
+                <div style="padding-left: 20px;">
+                    <p>3.4.1. <b>Opção A:</b> Clicar no nome do Evento.</p>
+                    <p>3.4.2. <b>Opção B:</b> Clicar em "Mais informações".</p>
+                </div>
+                <p>3.5. Realizar a inscrição no evento pelo link externo.</p>
+                <p>3.6. Clicar em "Registre no Organizador de Atividades".</p>
+                <p>3.7. Conferir e preencher os dados da atividade.</p>
+                <p>3.8. Clicar em "Registrar Atividade".</p>
+                <p>3.9. Clicar em "Confirmar Registro".</p>
+                <p>3.10. Clicar em “Ok”.</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>4. Registrar novas atividades.</b></p>
+            <div style="padding-left: 20px;">
+                <p>4.1. Clicar no botão "Registrar Atividade".</p>
+                <div style="padding-left: 20px;">
+                    <p>4.1.1. <b>Opção A:</b> Clicar no botão "Enviar certificado".</p>
+                    <div style="padding-left: 20px;">
+                        <p>4.1.1.1. Selecionar o arquivo do certificado.</p>
+                        <p>4.1.1.2. Verificar se todos os dados estão corretos.</p>
+                    </div>
+                    <p>4.1.2. <b>Opção B:</b> Clicar em "Preencher Formulário".</p>
+                    <div style="padding-left: 20px;">
+                        <p>4.1.2.1. Preencher todos os campos manualmente.</p>
+                    </div>
+                </div>
+                <p>4.1.3. Clicar em "Registrar Atividade".</p>
+                <p>4.1.4. Conferir novamente os dados.</p>
+                <p>4.1.5. Clicar em "Confirmar Registro".</p>
+                <p>4.1.6. Clicar em “Ok”.</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>5. Verificar se já tem todas as horas necessárias.</b></p>
+            <div style="padding-left: 20px;">
+                <p>5.1. Clicar no botão "Visão Geral".</p>
+                <p>5.2. Verificar se o sistema informa alguma hora faltante.</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>Planos de Execução (Lucas)</b></p>
+            <p><b>Plano 1 (Decidir sobre um Evento)</b> Realizar 1 (Entrar); para checar o progresso atual, realizar 5 (Verificar progresso); para encontrar e adicionar um novo evento, realizar 3 (Descobrir Eventos).</p>
+            <p><b>Plano 2 (Registrar Atividade Manualmente)</b> Realizar 1 (Entrar); para registrar um certificado que não está na lista de eventos, realizar 4 (Registrar manualmente).</p>
+            <p><b>Plano 3 (Gerenciar Atividades Existentes)</b> Realizar 1 (Entrar); para editar ou excluir um registro, realizar 2 (Gerenciar atividades).</p>
+        </div>
+    
+        <hr>
+    
+        <div>
+            <p><b>0. Submeter o Formulário de Atividades Complementares (Marcelo)</b></p>
+        </div>
+    
+        <div>
+            <p><b>1. Acessar o sistema e carregar dados do aluno.</b></p>
+            <div style="padding-left: 20px;">
+                <p>1.1. Clicar no botão "Entrar".</p>
+                <p>1.2. Realizar a autenticação na plataforma idUFF (login e senha).</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>2. Registrar novas atividades.</b></p>
+            <div style="padding-left: 20px;">
+                <p>2.1. Clicar no botão "Registrar Atividade".</p>
+                <div style="padding-left: 20px;">
+                    <p>2.1.1. <b>Opção A:</b> Clicar no botão "Enviar certificado".</p>
+                    <div style="padding-left: 20px;">
+                        <p>2.1.1.1. Selecionar o arquivo do certificado.</p>
+                        <p>2.1.1.2. Verificar se todos os dados estão corretos.</p>
+                    </div>
+                    <p>2.1.2. <b>Opção B:</b> Clicar em "Preencher Formulário".</p>
+                    <div style="padding-left: 20px;">
+                        <p>2.1.2.1. Preencher todos os campos manualmente.</p>
+                    </div>
+                </div>
+                <p>2.1.3. Clicar em "Registrar Atividade".</p>
+                <p>2.1.4. Conferir novamente os dados.</p>
+                <p>2.1.5. Clicar em "Confirmar Registro".</p>
+                <p>2.1.6. Clicar em “Ok”.</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>3. Verificar se já tem todas as horas necessárias.</b></p>
+            <div style="padding-left: 20px;">
+                <p>3.1. Clicar no botão "Visão Geral".</p>
+                <p>3.2. Verificar se o sistema informa alguma hora faltante.</p>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>4. Preencher formulário SRAC.</b></p>
+            <div style="padding-left: 20px;">
+                <p>4.1. Clicar no botão "Preencher formulário de solicitação".</p>
+                <div style="padding-left: 20px;">
+                    <p>4.1.1. <b>Opção A:</b> Clicar no botão "Baixar formulário SRAC preenchido".</p>
+                    <p>4.1.2. <b>Opção B:</b> Clicar no botão "Baixar formulário SRAC em branco".</p>
+                    <div style="padding-left: 20px;">
+                        <p>4.1.2.1. Preencher manualmente o pdf.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            <p><b>Planos de Execução (Marcelo)</b></p>
+            <p><b>Plano 1 (Uso Completo / Primeira Vez)</b> Realizar 1 (Entrar); para cada certificado, realizar 2 (Registrar Atividade); para checar o progresso, realizar 3 (Verificar horas); para finalizar, realizar 4 (Preencher formulário SRAC).</p>
+            <p><b>Plano 2 (Adicionar mais Atividades)</b> Realizar 1 (Entrar); para adicionar um novo certificado, realizar 2 (Registrar Atividade).</p>
+            <p><b>Plano 3 (Verificar Progresso ou Gerar Formulário)</b> Realizar 1 (Entrar); para verificar as horas, realizar 3. Para baixar o formulário, realizar 4.</p>
+        </div>
+        </div>
+      </section>
+      <section id="crazy4">
+        <div class="section-bg">
+          <h2><i class="fas fa-lightbulb"></i>Workshop de Ideação: Crazy 4</h2>
+          <p>
+            O Crazy 8 é uma técnica de
+            <strong>brainstorming</strong> e
+            <strong>prototipagem rápida</strong> muito utilizada no design
+            thinking, UX design, e em workshops de ideação. É uma forma rápida e
+            eficaz de gerar <strong>múltiplas ideias diferentes</strong> em um
+            curto período de tempo.
+          </p>
+          <p>
+            Na etapa de ideação, realizamos uma adaptação dessa técnica chamada
+            <strong>Crazy 4</strong>. Essa atividade foi realizada em aula, onde
+            fomos instruídos a pensar individualmente em 4 soluções diferentes
+            para resolver o problema levantado no HMW(How May We).
+          </p>
+          <br />
+          <h3>Tipos de Soluções</h3>
+          <p>
+            Cada uma das soluções devia ter um foco em um dos aspectos a seguir:
+          </p>
+          <ul>
+            <li>
+              <strong>Uma solução cara</strong>: Como chegar numa solução se
+              orçamento não fosse o problema.
+            </li>
+            <li>
+              <strong>Uma solução barata e rápida</strong>: Como chegar numa
+              solução usando o menor orçamento possível.
+            </li>
+            <li>
+              <strong>Uma solução inspirada em jogos</strong>: Como chegar numa
+              solução que fosse baseada em jogos e gameficação.
+            </li>
+            <li>
+              <strong>Uma solução baseada em robôs/IoT</strong>: Como chegar
+              numa solução que utilizasse robôs ou Internet das Coisas.
+            </li>
+          </ul>
+          <br />
+          <h3>Ideias Selecionadas para Desenvolvimento</h3>
+          <p>
+            Depois de cada membro do grupo chegar nas suas soluções, nos
+            juntamos e discutimos sobre quais ideias podiam ser adaptadas na
+            nossa solução.
+          </p>
+          <br />
+          <p>As seguintes ideias foram escolhidas:</p>
+          <ol>
+            <li>
+              <strong>Validação por QR Code:</strong> Uma solução que permitiria
+              ao usuário ler um QR Code em uma atividade (como uma palestra)
+              para obter seu certificado diretamente e ter essa atividade salva
+              automaticamente no sistema.
+            </li>
+            <li>
+              <strong
+                >Preenchimento Automático por Upload de Certificado:</strong
+              >
+              Uma funcionalidade onde o usuário poderia registrar uma atividade
+              fazendo o upload de um certificado, e o sistema utilizaria
+              tecnologias "robóticas" (como OCR e IA) para preencher as
+              informações relevantes automaticamente, agilizando o processo.
+            </li>
+          </ol>
+          <br />
+          <p>
+            Essas ideias se mostraram realmente úteis quando integradas no nosso
+            design, melhorando a experiência do usuário entregando maneiras mais
+            satisfatórias de resolver os seus problemas.
+          </p>
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <img src="images/crazy4-1.jpeg" alt="Screenshot" />
+                <p>
+                  <strong>Soluções do Daniel</strong>
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/crazy4-2.jpeg" alt="Screenshot" />
+                <p>
+                  <strong>Soluções do Rodrigo</strong>
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/crazy4-5.jpeg" alt="Screenshot" />
+                <p>
+                  <strong>Ideias Aproveitadas</strong>
+                </p>
+              </div>
+            </div>
+            <button class="carousel-arrow carousel-arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </section>
+      <section id="prototipo">
+        <div class="section-bg">
+          <h2><i class="fas fa-desktop"></i>Protótipo</h2>
+          <p>
+            O protótipo é a materialização das ideias desenvolvidas nas etapas
+            anteriores do nosso projeto. Ele permite que os designers tenham uma
+            plataforma paupável para testar as funcionalidades, validar as
+            soluções propostas e coletar feedback dos usuários, antes de
+            investir em um desenvolvimento completo.
+          </p>
+          <p>
+            As escolhas de design para este protótipo foram guiadas por diversas
+            <strong
+              >técnicas e abordagens teóricas de interação
+              humano-computador</strong
+            >. Aplicamos princípios como os da
+            <strong>psicologia das cores</strong>, os
+            <strong>princípios de Gestalt</strong>, e as
+            <strong>heurísticas de usabilidade</strong> para garantir que a
+            interface tenha uma boa usabilidade e para proporcionar uma melhor
+            experiência do usuário.
+          </p>
+          <br />
+          <h3>Acesso e Funcionalidades Atuais</h3>
+          <p>
+            Você pode acessar a versão atual do protótipo no seguinte link:
+            <a href="https://rodrigolugao.github.io/ihc" target="_blank"
+              >https://rodrigolugao.github.io/ihc</a
+            >.
+          </p>
+          <br />
+          <p>
+            As principais funcionalidades já implementadas nesta fase incluem:
+          </p>
+          <ul style="margin-left: 70px">
+            <li>Registro de novas atividades.</li>
+            <li>Visualização das atividades concluídas por usuário.</li>
+            <li>Edição e remoção de atividades existentes.</li>
+            <li>Descoberta de eventos com atividades complementares.</li>
+            <li>Acesso a informações do regulamento.</li>
+            <li>
+              Preenchimento e exportação do formulário de Solicitação de
+              Registro de Atividade Complementar (SRAC).
+            </li>
+          </ul>
+          <br />
+          <h3>Principais telas</h3>
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <p><strong>Página Inicial</strong></p>
+                <img src="images/pagina-inicial.png" alt="Página Inicial" />
+              </div>
+              <div class="carousel-slide">
+                <p><strong>Página sobre Atividades complementares</strong></p>
+                <img src="images/atividades.png" alt="Página Sobre ACs" />
+              </div>
+              <div class="carousel-slide">
+                <p><strong>Página de Eventos</strong></p>
+                <img src="images/eventos-new.png" alt="Página de Eventos" />
+              </div>
+              <div class="carousel-slide">
+                <p><strong>Dashboard</strong></p>
+                <img src="images/dashboard.png" alt="Dashboard" />
+              </div>
+              <div class="carousel-slide">
+                <p><strong>Página de Registro de AC</strong></p>
+                <img src="images/registro-new.png" alt="Página Registro AC" />
+              </div>
+              <div class="carousel-slide">
+                <p><strong>Página do Formulário SRAC</strong></p>
+                <img src="images/srac.png" alt="Página SRAC" />
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots"></div>
+          </div>
+          <br />
+          <h3>Análise Competitiva/Inspiradora</h3>
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <div class="carousel-slide-content">
+                  <div class="carousel-text-column">
+                    <p><strong>Competidores e inspiração</strong></p>
+                    <br />
+                    <p>
+                      Começamos o design do protótipo nos baseando nas
+                      interfaces encontradas na análise competitiva da etapa de
+                      imersão. Buscamos aproveitar as partes positivas das
+                      interfaces pesquisadas e implementar melhorias que
+                      julgamos necessárias.
+                    </p>
+                    <br />
+                    <p>
+                      Veja alguns exemplos de insights obtidos nos próximos
+                      slides.
+                    </p>
+                  </div>
+                  <div class="carousel-image-column">
+                    <img
+                      src="images/inspiracao.png"
+                      alt="As interfaces avaliadas na análise competitiva"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="images/unifal.png"
+                  alt="Screenshot do simulador de ACs da Unifal"
+                />
+                <p><strong>Simulador de ACs da Unifal</strong></p>
+                <br />
+                <p>
+                  A avaliação do simulador da Unifal nos permitiu identificar
+                  oportunidades de melhoria em interfaces similares. Observamos
+                  a falta de informações acessíveis sobre as ACs e uma
+                  distribuição de conteúdo desfavorável, que comprometia a
+                  experiência do usuário.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <div class="carousel-slide-content">
+                  <div class="carousel-text-column">
+                    <p><strong>Aplicativo Macros</strong></p>
+                    <br />
+                    <p>Deu a ideia do gráfico de horas</p>
+                  </div>
+                  <div
+                    class="carousel-image-column"
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <img
+                      src="images/macros.png"
+                      alt="Screenshot do aplicativo Macros"
+                      style="max-height: 630px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots"></div>
+          </div>
+          <br />
+          <h3>Engenharia Cognitiva</h3>
+          <br />
+          <p>
+            Nossa interface também foi projetada com base nos princípios da
+            Engenharia Cognitiva, uma abordagem que junta o conhecimento da
+            ciência cognitiva e o design de sistemas computacionais. Ao utilizar
+            a engenharia cognitiva, nossa intenção foi criar uma experiência de
+            usuário que se respeitasse os processos mentais dos usuários,
+            minimizando a carga cognitiva e facilitando a interação.
+          </p>
+          <br />
+          <p>
+            Algumas das maneiras que aplicamos a Engenharia Cognitiva pelo nosso
+            design:
+          </p>
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <img src="images/pagina-inicial.png" alt="Screenshot" />
+                <p>
+                  <strong>Exibição Clara das Funcionalidades Principais</strong>
+                </p>
+                <br />
+                <p>
+                  Desde o primeiro contato, na página inicial, e nas interações
+                  seguintes, por meio do menu no topo, a interface apresenta as
+                  funcionalidades essenciais de forma clara e evidente. Isso
+                  auxilia o usuário a formar objetivos adequados. Com os
+                  objetivos do sistema em evidência, a "distância semântica",
+                  que é a lacuna entre a intenção do usuário e as
+                  funcionalidades oferecidas pelo sistema, é reduzida.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/cognitiva.png" alt="Screenshot da interface" />
+                <p>
+                  <strong
+                    >Facilidade para Encontrar Elementos de Interface
+                    Corretos</strong
+                  >
+                </p>
+                <br />
+                <p>
+                  Tentamos priorizar a clareza e a familiaridade dos elementos
+                  de interface (ícones, rótulos, botões), para mitigar o
+                  problema de "usuários podem não encontrar o elemento de
+                  interface correto", descrito pela Engenharia Cognitiva.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/cognitiva-2.png" alt="Screenshot" />
+                <p>
+                  <strong>Feedback Instantâneo e de Fácil Entendimento</strong>
+                </p>
+                <br />
+                <p>
+                  Projetamos a interface para fornecer feedback claro e imediato
+                  sobre as ações do usuário. Isso ajuda na travessia do Golfo da
+                  Avaliação, permitindo que o usuário interprete facilmente o
+                  que aconteceu e determine se suas expectativas e intenções
+                  foram alcançadas.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/cognitiva-3.png" alt="Screenshot" />
+                <p>
+                  <strong>Indicadores de Estado</strong>
+                </p>
+                <br />
+                <p>
+                  Procuramos fazer com que a interface sempre comunique o que
+                  está fazendo a cada momento. Isso mantém o usuário informado
+                  sobre o contexto e as expectativas do sistema.
+                </p>
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots"></div>
+          </div>
+          <br />
+          <h3>Engenharia Semiótica</h3>
+          <br />
+          <p>
+            A Engenharia Smiótica entende a interface como mais do que uma
+            ferramenta para que o usuário realize tarefas, mas como uma
+            metacomunicação do designer com o usuário.Ou seja, o designer "fala"
+            com o usuário por meio da interface, explicando como o sistema
+            funciona e deve ser usado.
+          </p>
+          <br />
+          <p>
+            Alguns exemplos de como a Engenharia Semiótica guiou nosso processo
+            de design, ajudando a consolidar as informações obtidas na etapa
+            anterior na interface projetada:
+          </p>
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <img src="images/pagina-inicial.png" alt="Screenshot" />
+                <p>
+                  <strong>Definimos a nossa mensagem para o usuário</strong>
+                </p>
+                <br />
+                <p>
+                  Estabelecemos a missão central do Sistema, definida na Etapa
+                  de Imersão: ser uma ferramenta útil para assuntos relacionados
+                  às Atividades Complementares.
+                </p>
+                <p>
+                  Buscamos contar a história do propósito principal do sistema,
+                  que é
+                  <strong>Clarificar</strong> as complexas regras e cálculos das
+                  ACs, <strong>Organizar</strong> e centralizar as informações
+                  das atividades já concluídas, e
+                  <strong>Auxiliar</strong> ativamente no processo de
+                  monitoramento e cumprimento dos requisitos.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/semiotica.png" alt="Screenshot da interface" />
+                <p>
+                  <strong
+                    >Identificamos os Conceitos-Chave e os Tornamos
+                    Concretos</strong
+                  >
+                </p>
+                <br />
+                <p>
+                  Listamos os conceitos mais importantes do sistema (Atividades
+                  Complementares, Eventos, Requisitos do Regulamento, etc) e os
+                  tornamos palpáveis e compreensíveis, com elementos claros e
+                  consistentes na interface.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/semiotica-2.png" alt="Screenshot" />
+                <p>
+                  <strong>Projetamos a Argumentação</strong>
+                </p>
+                <br />
+                <p>
+                  Desenhamos maneiras da interface "ensinar" o usuário a usar o
+                  sistema.
+                </p>
+                <p>
+                  No exemplo exibido, a interface informa o usuário que ele já
+                  tem horas suficientes e o guia até a página do preenchimento
+                  do formulário.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/semiotica-3.png" alt="Screenshot" />
+                <p>
+                  <strong>Tentamos Previnir Erros de Comunicação</strong>
+                </p>
+                <br />
+                <p>
+                  Antecipamos casos em que o usuário poderia não entender a
+                  mensagem do sistema e colocamos feedback que pode ajudar a
+                  corrigir os mal-entendidos.
+                </p>
+                <p>
+                  No exemplo exibido, a interface informa que o usuário ainda
+                  não fez o login e/ou ainda não adicionou nenhuma AC.
+                </p>
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots"></div>
+          </div>
+          <br />
+          <h3>Outros Princípios de Design Adotados</h3>
+          <br />
+          <p>
+            Além da Engenharia Cognitiva e da Engenharia Semiótica, nossa
+            interface foidesenvolvida incorporando outros princípios de
+            Interação Humano-Computador (IHC) e design, para criar uma
+            experiência de usuário agradável e intuitiva.
+          </p>
+          <br />
+          <p>
+            Utilizamos a Lei de Hick, lei de Fitts, os princípios de Gestalt e a
+            Psicologia das Cores para aprimorar nossa interface:
+          </p>
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <img src="images/eventos.png" alt="Screenshot" />
+                <p>
+                  <strong>Lei de Hick-Hyman</strong>
+                </p>
+                <br />
+                <p>
+                  A lei de Hick afirma que o tempo necessário para tomar uma
+                  decisão aumenta com o número e a complexidade das escolhas
+                  disponíveis. Menos opções, mais rápido o usuário decide.
+                </p>
+                <p>
+                  Em partes da interface com um número excessivo de informações
+                  e opções de interação, reduzimos os elementos em tela para não
+                  sobrecarregar o usuário.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="images/eventos-new.png"
+                  alt="Screenshot da interface"
+                />
+                <p>
+                  <strong>Lei de Hick-Hyman</strong>
+                </p>
+                <br />
+                <p>
+                  Na página de eventos, deixamos o filtro de busca inicialmente
+                  escondido, somente deixando evidente a opção de exibi-lo. Isso
+                  ajudou a diminuir a confusão inicial que acontecia
+                  anteriormente.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/pagina-inicial-3.png" alt="Screenshot" />
+                <p>
+                  <strong>Lei de Fitts</strong>
+                </p>
+                <br />
+                <p>
+                  Esta lei descreve que o tempo para mover-se para um alvo é uma
+                  função da distância até o alvo e do seu tamanho. Alvos maiores
+                  e mais próximos são mais fáceis e rápidos de alcançar.
+                </p>
+                <p>
+                  Deixamos os elementos principais de cada página mais próximos
+                  do início da navegação e maiores, reduzindo o tempo que o
+                  usuário precisa para chegar nas principais funcionalidades.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/pagina-inicial-eventos.png" alt="Screenshot" />
+                <p>
+                  <strong>Lei de Fitts</strong>
+                </p>
+                <br />
+                <p>
+                  Levamos o botão de ver todos os eventos para o topo do grupo
+                  de elementos, para que o usuário possa rápidamente verificar
+                  todos os eventos ou tentar buscar eventos que o interessam.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="images/atividades.png"
+                  alt="Screenshot da tela de regras de ACs"
+                />
+                <p><strong>Psicologia das Cores</strong></p>
+                <p>
+                  Diferentes cores evocam distintas respostas emocionais e
+                  psicológicas, além de possuírem significados culturais. O uso
+                  intencional das cores pode guiar a atenção e transmitir
+                  informações de forma não verbal.
+                </p>
+                <p>
+                  Na Etapa de Imersão, verificamos que usuários se sentiriam
+                  mais seguros com uma ferramenta que fosse desenvolvida,
+                  supervisionada ou tivesse a autorização do Instituto de
+                  Computação da UFF. Para refletir essa associação com o IC-UFF,
+                  optamos por utilizar um esquema de cores parecido com o
+                  esquema do site oficial do instituto.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="images/psicologia.png"
+                  alt="Screenshot da tela de lista de ACs"
+                />
+                <p><strong>Psicologia das Cores</strong></p>
+
+                <p>
+                  Além disso, ainda utilizamos cores que fazem sentido no
+                  contexto dos usuários nos elementos onde era necessário:
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      <span style="color: green">Verde</span>: Utilizado para
+                      funcionalidades principais e ações positivas do sistema.
+                      Como no botão de editar atividade.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span style="color: yellow">Amarelo</span>: Utilizado em
+                      elementos que precisam de atenção do usuário, como o badge
+                      que informa que uma atividade ainda não tem o certificado.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span style="color: red">Vermelho</span>: Utilizado para
+                      alertas e para funcionalidades que, se mal utilizados,
+                      podem ter resultados indesejados ou danosos ao usuário. Um
+                      exemplo é o botão de remover atividade
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots"></div>
+          </div>
+          <br />
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <p>
+                  <strong>Princípios de Gestalt</strong>
+                </p>
+                <img
+                  src="images/gestalt.jpg"
+                  alt="Um exemplo de um princípio de Gestalt"
+                  style="max-height: 630px"
+                />
+                <p>
+                  A Psicologia de Gestalt oferece um conjunto de princípios que
+                  explicam como o cérebro humano agrupa e interpreta informações
+                  visuais. Ao aplicá-los no design de interface, criamos layouts
+                  que são naturalmente mais intuitivos e eficientes para o
+                  usuário processar, minimizando o esforço cognitivo e
+                  aprimorando a clareza da comunicação visual.
+                </p>
+                <br />
+                <p>
+                  No nosso design, aplicamos os princípios de Gestalt nos
+                  elementos para agrupar visualmente informações relacionadas e
+                  criar uma hierarquia clara
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="images/pagina-inicial-3.png"
+                  alt="Screenshot da interface"
+                />
+                <p>
+                  <strong>Proximidade</strong>
+                </p>
+                <br />
+                <p>
+                  Elementos que estão próximos uns dos outros são percebidos
+                  como pertencentes ao mesmo grupo ou relacionados entre si.
+                </p>
+                <br />
+                <p>
+                  Os cards da imagem foram agrupados assim para que o usuário
+                  entenda que todos levam a informações sobre Atividades
+                  Complementares.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/pagina-inicial.png" alt="Screenshot" />
+                <p>
+                  <strong>Continuidade</strong>
+                </p>
+                <br />
+                <p>
+                  Elementos são percebidos como um padrão contínuo e conectado,
+                  em vez de elementos separados e interrompidos. O olho humano
+                  tende a seguir o caminho mais suave.
+                </p>
+                <br />
+                <p>
+                  Na página principal o título "Atividades Complementares:"
+                  aparece no final da tela, sinalizando ao usuário de que existe
+                  mais conteúdo se rolar a página.
+                </p>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/cognitiva-2.png" alt="Screenshot" />
+                <p>
+                  <strong>Figura-Fundo</strong>
+                </p>
+                <br />
+                <p>
+                  O cérebro humano tende a separar visualmente um objeto
+                  principal (a "figura") do seu ambiente circundante (o
+                  "fundo"). Um bom design garante que a figura seja claramente
+                  distinguível do fundo.
+                </p>
+                <br />
+                <p>
+                  O modal utilizado para informar o usuário que sua ação foi
+                  concluída aparece sobre um fundo translúcido escuro, fazendo
+                  com que o seu conteúdo (a "figura") se destaque claramente do
+                  restante da página (o "fundo"), direcionando a atenção do
+                  usuário para a mensagem crítica.
+                </p>
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+    <script>
+      // Seleciona todas as imagens das seções
+      const images = document.querySelectorAll("section img");
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      const closeBtn = document.querySelector(".close");
+
+      images.forEach((img) => {
+        img.style.cursor = "zoom-in";
+        img.addEventListener("click", () => {
+          modal.style.display = "block";
+          modalImg.src = img.src;
+          modalImg.alt = img.alt;
+        });
+      });
+
+      closeBtn.onclick = () => {
+        modal.style.display = "none";
+      };
+
+      window.onclick = (e) => {
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script src="carrossel.js"></script>
+  </body>
+</html>
