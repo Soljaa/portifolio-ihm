@@ -1,5 +1,5 @@
 <template>
-    <SectionComponent itemid="principal" title="Sobre o Projeto" icon="fa-question-circle">
+    <SectionComponent itemid="principal" title="Sistema de Organização de Atividades Complementares" icon="fa-question-circle">
       <p>
             O objetivo deste projeto é criar uma plataforma central onde alunos podem organizar suas atividades completas, obter detalhes sobre o projeto,
              verificar o número de horas complementares completas, quantas horas faltam para alcançar o mínimo de seu currículo e descobrir novos eventos.

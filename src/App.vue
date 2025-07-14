@@ -63,12 +63,9 @@ export default {
 
     window.addEventListener('hashchange', () => {
       currentPath.value = window.location.hash
-      console.log('triggered')
     })
 
     const current_sections = computed(() => {
-      console.log(currentPath)
-      console.log(routes[currentPath.value.slice(1) || '/'] || routes['/'])
       return routes[currentPath.value.slice(1) || '/'] || routes['/']
     })
 

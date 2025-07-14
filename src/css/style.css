@@ -51,14 +51,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
 .header-nav a {
   color: white;
   text-decoration: none;
-  margin-left: 1rem;
   font-weight: bold;
   transition: opacity 0.3s;
 }
@@ -66,6 +64,7 @@ img {
 .header-nav .nav-items-container {
   display: flex;
   flex-direction: row;
+  gap: 15px;
 }
 
 .header-nav a:hover {
@@ -210,16 +209,16 @@ iframe {
   align-items: center;
 }
 
-  .heuristics-graphs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  .heuristics-graphs img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
+.heuristics-graphs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.heuristics-graphs img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 @media screen and (min-width: 1507px) {
   main {
@@ -261,17 +260,6 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  .header-nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header-nav div:last-child {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
 
   section {
     padding: 2rem 1rem;
