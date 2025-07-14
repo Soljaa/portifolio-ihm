@@ -532,3 +532,8 @@ iframe {
 .carousel-slide ol {
   margin: 0 75px;
 }
+
+.nivel1 { margin-left: 0; font-weight: bold; }
+.nivel2 { margin-left: 20px; }
+.nivel3 { margin-left: 40px; }
+.nivel4 { margin-left: 60px; }
