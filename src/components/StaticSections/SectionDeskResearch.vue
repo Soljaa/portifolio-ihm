@@ -4,18 +4,24 @@
                       icon="fa-search">
       
 
-        <img alt="matriz csd" src="@/assets/images/csd.jpg" />
+        <ZoomableImage alt="matriz csd" :src="csdImg" />
 
     </SectionComponent>
 </template>
 
 <script>
 import SectionComponent from '../SectionComponent.vue';
+import ZoomableImage from "../ZoomableImage.vue";
+import csdImg from "@/assets/images/csd.jpg";
 
 export default{
     name: 'SectionDeskResearch',
     components: {
-        SectionComponent
-    }
+        SectionComponent,
+        ZoomableImage
+    },
+    data() {
+    return { csdImg };
+  }
 }
 </script>

@@ -39,10 +39,8 @@ export default {
         onMounted(() => {
             slides = currentCarrousel.value.querySelectorAll('.carousel-slide');
             slidesContainer = currentCarrousel.value.querySelector('.carousel-slides');
-            //console.log(slides)
             totalSlides.value = slides.length;
             slideIndexArray.value = Array.from({length: totalSlides.value}, (v, i) => i);
-            console.log(slideIndexArray)
             // Função para atualizar a exibição do carrossel específico
             // Aplica a transformação para mover os slides 
             currentCarrousel.value.style.transform = `translateX(-${currentSlideIndex.value * 100}%)`;
@@ -51,7 +49,6 @@ export default {
 
         onUpdated(() => {
             if (currentCarrousel.value != null){
-                console.log(slides)
                 slidesContainer.style.transform = `translateX(-${currentSlideIndex.value * 100}%)`
         }
         })
@@ -60,12 +57,10 @@ export default {
 
         // Event listeners para as setas deste carrossel específico
         let next = () => {
-            console.log('clicked')
             currentSlideIndex.value++;
             if (currentSlideIndex.value >= totalSlides.value) {
                 currentSlideIndex.value = 0; // Volta para o primeiro slide (loop)
             }
-            console.log(currentSlideIndex.value)
         };
 
         let previous = () => {

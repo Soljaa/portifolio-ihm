@@ -4,18 +4,24 @@
                       icon="fa-chart-line">
       
 
-        <img alt="matriz csd" src="@/assets/images/comparativa.jpg" />
+        <ZoomableImage alt="análise comparativa" :src="comparativaImg" />
 
     </SectionComponent>
 </template>
 
 <script>
 import SectionComponent from '../SectionComponent.vue';
+import ZoomableImage from "../ZoomableImage.vue";
+import comparativaImg from "@/assets/images/comparativa.jpg";
 
 export default{
     name: 'SectionAnalise',
     components: {
-        SectionComponent
-    }
+        SectionComponent,
+        ZoomableImage
+    },
+    data() {
+    return { comparativaImg };
+  }
 }
 </script>
