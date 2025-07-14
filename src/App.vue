@@ -1,5 +1,5 @@
 <template>
-  <HeaderNav :index-path="'/'" :first-path="'/analise-sit'" :second-path="'/sint-prot'" :third-path="'/avaliacao'"></HeaderNav>
+  <HeaderNav :index-path="'/'" :first-path="'/analise-sit'" :second-path="'/sint-prot'" :third-path="'/avaliacao'" :forth-path="'/roadmap'"></HeaderNav>
 
   <main style="margin: auto;" v-for="sec in current_sections" ref="sections" :key="sec">
     <component :is="sec"></component>
@@ -21,6 +21,9 @@ import SectionQualitativa from './components/StaticSections/SectionQualitativa.v
 import SectionQuestionario from './components/StaticSections/SectionQuestionario.vue';
 import SectionTarefas from './components/StaticSections/SectionTarefas.vue';
 import SectionHeuristica from './components/StaticSections/SectionHeuristica.vue';
+import SectionRoadmap from './components/StaticSections/SectionRoadmap.vue';
+import SectionFirstclick from './components/StaticSections/SectionFirstclick.vue';
+import SectionCognitivo from './components/StaticSections/SectionCognitivo.vue';
 
 import { ref, useTemplateRef, computed } from 'vue'
 
@@ -47,13 +50,20 @@ export default {
 
     const avaliacao = [
       SectionHeuristica,
+      SectionFirstclick,
+      SectionCognitivo
+    ]
+
+    const roadmap = [
+      SectionRoadmap,
     ]
 
     const routes = {
       '/' : index_sections,
       '/analise-sit': analise_sit_sections,
       '/sint-prot': sintese_protot_sections,
-      '/avaliacao': avaliacao
+      '/avaliacao': avaliacao,
+      '/roadmap': roadmap
     }
 
 

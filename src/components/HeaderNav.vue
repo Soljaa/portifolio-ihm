@@ -15,16 +15,16 @@
       <!-- Itens do menu -->
       <div class="nav-items-container" :class="{ open: menuOpen }">
         <div class="nav-item-wrapper">
-          <a :href="'#' + firstPath" @click="closeMenu">Análise da Situação Atual</a>
+          <a :href="'#' + firstPath" @click="closeMenu">Imersão</a>
         </div>
         <div class="nav-item-wrapper">
-          <a :href="'#' + secondPath" @click="closeMenu">Síntese e prototipação</a>
+          <a :href="'#' + secondPath" @click="closeMenu">Ideação</a>
         </div>
         <div class="nav-item-wrapper">
           <a :href="'#' + thirdPath" @click="closeMenu">Avaliação</a>
         </div>
         <div class="nav-item-wrapper">
-          <a :href="'#' + roadmap" @click="closeMenu">Roadmap</a>
+          <a :href="'#' + forthPath" @click="closeMenu">Roadmap</a>
         </div>
       </div>
     </nav>
@@ -34,7 +34,7 @@
 <script>
 export default {
   name: 'HeaderNav',
-  props: ['indexPath', 'firstPath', 'secondPath', 'thirdPath', 'roadmap'],
+  props: ['indexPath', 'firstPath', 'secondPath', 'thirdPath', 'forthPath'],
   data() {
     return {
       menuOpen: false,
