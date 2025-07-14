@@ -12,9 +12,9 @@
 
           <strong>Integrantes: </strong>
           <ul style="margin-left: 5%;">
-            <li>Daniel Jose</li>
+            <li>Daniel José</li>
             <li>Rodrigo Lugão</li>
-            <li>Grabriel Tavares</li>
+            <li>Gabriel Tavares</li>
             <li>Cael Gonçalves</li>
           </ul>
     </SectionComponent>

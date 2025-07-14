@@ -1,8 +1,8 @@
 <template>
 
-<section id="{{ idname }}">
+<section :id="idname">
     <div class="section-bg">
-        <h2><i class="fas {{icon}}"></i> {{ title }}</h2>
+        <h2><i :class="['fas', icon]"></i> {{ title }}</h2>
 
         <slot>
 

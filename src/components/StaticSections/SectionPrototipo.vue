@@ -1,6 +1,6 @@
 <template>
     <SectionComponent title="Protótipo"
-                      icon="fa-decktop"
+                      icon="fa-code"
                       itemid="prototipo">
 
         <p>

@@ -4,8 +4,8 @@
                       icon="fa-poll">
         
         <p>Formulário:</p>
-          <div v-html="iframe_formulario"></div>
-
+          <div style="display: flex; justify-content: center;" v-html="iframe_formulario"></div>
+            <br>
           <p>Resultados principais com visualização gráfica:</p>
           <div class="chart">
             
@@ -92,7 +92,7 @@ export default{
                 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_g5Y1lEgJpftk-CUFb6PL-Bt4VhKGnC5NWNjc6qdhemv7ERRwTgbPkmR1M8ZacuC0ffStt1_yEBcG/pubchart?oid=374904570&amp;format=interactive"
             ></iframe>`,
             `<iframe
-                width="600"
+                width="1000"
                 height="371"
                 seamless
                 frameborder="0"
