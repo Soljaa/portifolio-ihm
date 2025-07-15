@@ -9,8 +9,8 @@
           <p>Resultados principais com visualização gráfica:</p>
           <div class="chart">
             
-            <div v-for="item in forms_iframes" :key="item">
-                <div v-html="item"></div>
+            <div class="charts-wrapper" v-for="item in forms_iframes" :key="item">
+                <div class="iframe-container" v-html="item"></div>
             </div>
 
             <section class="section-bg">

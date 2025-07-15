@@ -47,35 +47,6 @@ img {
   max-width: 100%;
 }
 
-.header-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.header-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: opacity 0.3s;
-}
-
-.header-nav .nav-items-container {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
-.header-nav a:hover {
-  opacity: 0.8;
-  text-decoration: underline;
-}
-
-.header-nav .selected {
-  text-decoration: underline;
-}
-
 .sticky-navigation-sidebar {
   position: -webkit-sticky;
   position: sticky;
@@ -220,6 +191,12 @@ iframe {
   object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .heuristics-graphs {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (min-width: 1507px) {
   main {
     margin-top: -8%;
@@ -260,6 +237,14 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  main {
+    padding: 0;
+  }
+
+  .chart {
+    display: block;
+    overflow: scroll;
+  }
 
   section {
     padding: 2rem 1rem;
@@ -279,10 +264,6 @@ iframe {
   section ul,
   section li {
     font-size: 1rem;
-  }
-
-  iframe {
-    height: 250px;
   }
 
   .chart > iframe {
